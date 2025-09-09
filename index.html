@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Valley | Bubble Tea & Refreshers in Spring, TX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles inspired by the Tea Valley logo and store interior */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F6F1; /* A soft cream background */
+        }
+        .font-heading {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-primary-green {
+            background-color: #A4BCA8; /* Soft green from the logo */
+        }
+        .text-primary-green {
+            color: #A4BCA8;
+        }
+        .bg-accent-pink {
+            background-color: #E58C8A; /* Vibrant pink from the store's wall art */
+        }
+        .text-accent-pink {
+            color: #E58C8A;
+        }
+        .bg-dark-text {
+            background-color: #3D3D3D;
+        }
+        .text-dark-text {
+            color: #3D3D3D;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(249, 246, 241, 1) 20%, rgba(249, 246, 241, 0)), url('https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/9a4465b5-e6f9-46e2-938f-9a1b411f7c22?sk=f14d48a3-2884-4861-a1e6-231a54b3c959&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B');
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 768px) {
+            .hero-bg {
+                 background-image: linear-gradient(to bottom, rgba(249, 246, 241, 1) 30%, rgba(249, 246, 241, 0)), url('https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/9a4465b5-e6f9-46e2-938f-9a1b411f7c22?sk=f14d48a3-2884-4861-a1e6-231a54b3c959&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B');
+            }
+        }
+    </style>
+</head>
+<body class="text-dark-text">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                 <!-- TODO: Replace this placeholder src with the URL for your logo image -->
+                <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/0c6c1050-4d43-4c91-9e73-b7d6054e85aa?sk=7724a737-1227-4654-8c85-6188e001a182&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=c2V0dGxlciBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNelm9uZS1lbmQtdG9rZW4= alt="Tea Valley Logo" class="h-12 w-auto">
+                <span class="font-heading text-2xl font-bold text-dark-text">Tea Valley</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-primary-green transition">About</a>
+                <a href="#favorites" class="text-gray-600 hover:text-primary-green transition">Favorites</a>
+                <a href="#menu" class="text-gray-600 hover:text-primary-green transition">Menu</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary-green transition">Visit Us</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-primary-green transition">About</a>
+            <a href="#favorites" class="block py-2 text-gray-600 hover:text-primary-green transition">Favorites</a>
+            <a href="#menu" class="block py-2 text-gray-600 hover:text-primary-green transition">Menu</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-primary-green transition">Visit Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg min-h-[50vh] md:min-h-[70vh] flex items-center">
+            <div class="container mx-auto px-6 text-center md:text-left">
+                <div class="md:w-1/2 lg:w-2/5">
+                    <h1 class="font-heading text-4xl md:text-6xl font-bold text-dark-text leading-tight">Your Daily Dose of Delight.</h1>
+                    <p class="mt-4 text-lg text-gray-700">Experience handcrafted bubble teas, fresh fruit refreshers, and irresistible snacks at Tea Valley. A moment of pure joy in every cup.</p>
+                    <div class="mt-8">
+                        <a href="#menu" class="bg-accent-pink text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition transform hover:scale-105 shadow-lg">View Our Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Welcome to the Valley</h2>
+                        <p class="mb-4 text-gray-600">Nestled in the heart of Spring, TX, Tea Valley is your local sanctuary for authentic bubble tea and creative refreshments. We're passionate about quality, using only the freshest ingredients to craft unique flavors that will brighten your day.</p>
+                        <p class="text-gray-600">From our signature milk teas to our vibrant fruit refreshers and savory snacks, there's a taste of happiness waiting for everyone. Come in, relax, and find your favorite flavor!</p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <!-- TODO: Replace this placeholder src with the URL for your store interior image (IMG_2159.jpg) -->
+                        <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/41347076-2f04-4c60-a886-cdd21f6874ba?sk=b2759e61-a083-49d7-832f-7634d3d18e97&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B" alt="Tea Valley store interior with floral sign" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fan Favorites Section -->
+        <section id="favorites" class="bg-primary-green/20 py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-2">Our Fan Favorites</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-12">Not sure what to try? Start with one of these beloved creations!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Favorite 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <!-- TODO: Replace with your Mango Dragonfruit Refresher image URL -->
+                        <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/7d425cc9-e33a-4934-a14a-10f60706246e?sk=a0545f41-05d0-4054-bb34-1147e44a2c5a&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B" alt="Mango Dragonfruit Refresher" class="w-full h-64 object-cover rounded-md mb-4">
+                        <h3 class="font-bold text-xl mb-2">Mango Dragonfruit Refresher</h3>
+                        <p class="text-gray-600">A tropical paradise in a cup. Sweet mango meets exotic dragonfruit for the ultimate refreshment.</p>
+                    </div>
+                    <!-- Favorite 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                         <!-- TODO: Replace with your Taro Crunch Smoothie image URL -->
+                        <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/4e0a7df8-f027-4638-956f-f61b7f941162?sk=9b9777f7-b8c1-4b13-a417-68b209a25b33&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B" alt="Taro Crunch Smoothie" class="w-full h-64 object-cover rounded-md mb-4">
+                        <h3 class="font-bold text-xl mb-2">Taro Crunch Smoothie</h3>
+                        <p class="text-gray-600">A creamy, dreamy taro smoothie blended with Oreo crumbs for a satisfying crunch.</p>
+                    </div>
+                    <!-- Favorite 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                         <!-- TODO: Replace with your Brown Sugar Boba image URL -->
+                        <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/52e7240a-5b62-4f1e-bc8e-28ce780c107e?sk=f14d48a3-2884-4861-a1e6-231a54b3c959&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B" alt="Brown Sugar Boba" class="w-full h-64 object-cover rounded-md mb-4">
+                        <h3 class="font-bold text-xl mb-2">Brown Sugar Boba</h3>
+                        <p class="text-gray-600">The classic favorite! Rich brown sugar syrup with fresh milk and perfectly chewy boba.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12">Our Full Menu</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+                     <!-- TODO: Replace with your Drinks Menu image URL -->
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/f21774e1-2550-48e0-a7d5-e3d820847f98?sk=f3583f7a-2453-4811-9e8c-843815c324e9&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=Vv9Qk2hX0v93V2T8V0A1i%2B6m3j9T3j9B%2B9d9a%2B9B%2B9d9a%2B9B" alt="Tea Valley Drinks Menu" class="rounded-lg shadow-xl w-full h-auto">
+                     <!-- TODO: Replace with your Snacks Menu image URL -->
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-vod-uploads/v1/385f0e9c-1718-490b-93f8-69389e18b438?sk=1da88b22-82f5-430c-99c5-8490a6125ac8&Expires=1725902400&GoogleAccessId=upscaled-media-prod-sa%40gemini-392215.iam.gserviceaccount.com&Signature=c2V0dGxlciBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNlbCBjYW5jZWwgY2FuY2VsIGNhbmNelm9uZS1lbmQtdG9rZW4= alt="Tea Valley Snacks Menu" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact & Location Section -->
+        <section id="contact" class="py-16 md:py-24 bg-primary-green/20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-12 items-center">
+                    <!-- Map -->
+                    <div class="lg:w-1/2 w-full h-80 md:h-96 rounded-lg shadow-xl overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.689626350361!2d-95.4800669!3d30.0457639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640cc7f40555555%3A0x6b1f237f3b890a5d!2sTea%20Valley!5e0!3m2!1sen!2sus!4v1694022513333!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <!-- Info -->
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Come Say Hi!</h2>
+                        <div class="space-y-4 text-lg">
+                            <div>
+                                <h3 class="font-bold">Address</h3>
+                                <p class="text-gray-600">18379a Kuykendahl Rd Ste A, Spring, TX 77379</p>
+                            </div>
+                             <div>
+                                <h3 class="font-bold">Hours</h3>
+                                <p class="text-gray-600">Mon - Sat: 11:00 AM - 9:00 PM</p>
+                                <p class="text-gray-600">Sunday: 11:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-text text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+             <p>&copy; <span id="year"></span> Tea Valley. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
