@@ -51,33 +51,41 @@
 <body class="text-dark-text">
 
     <!-- Header -->
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                 <!-- TODO: Replace this placeholder src with the URL for your logo image -->
-                <img src="/images/logo_leaf.png" alt="Tea Valley Logo" class="h-12 w-auto">
-                <span class="font-heading text-2xl font-bold text-dark-text">Tea Valley</span>
-            </div>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#about" class="text-gray-600 hover:text-primary-green transition">About</a>
-                <a href="#favorites" class="text-gray-600 hover:text-primary-green transition">Favorites</a>
-                <a href="#menu" class="text-gray-600 hover:text-primary-green transition">Menu</a>
-                <a href="#contact" class="text-gray-600 hover:text-primary-green transition">Visit Us</a>
-            </nav>
-            <button id="mobile-menu-button" class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#about" class="block py-2 text-gray-600 hover:text-primary-green transition">About</a>
-            <a href="#favorites" class="block py-2 text-gray-600 hover:text-primary-green transition">Favorites</a>
-            <a href="#menu" class="block py-2 text-gray-600 hover:text-primary-green transition">Menu</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-primary-green transition">Visit Us</a>
-        </div>
-    </header>
+<header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="/images/logo_leaf.webp" alt="Tea Valley Logo" class="h-12 w-auto">
+      <span class="font-heading text-2xl font-bold text-dark-text">Tea Valley</span>
+    </div>
+    <nav class="hidden md:flex space-x-8 items-center">
+      <a href="#about" class="text-gray-600 hover:text-primary-green transition">About</a>
+      <a href="#favorites" class="text-gray-600 hover:text-primary-green transition">Favorites</a>
+      <a href="#menu" class="text-gray-600 hover:text-primary-green transition">Menu</a>
+      <a href="#contact" class="text-gray-600 hover:text-primary-green transition">Visit Us</a>
+      <!-- New Order Online Button -->
+      <a href="#order-online" class="bg-primary-green text-white px-4 py-2 rounded-lg shadow hover:bg-green-700 transition">
+        Order Online
+      </a>
+    </nav>
+    <button id="mobile-menu-button" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+    <a href="#about" class="block py-2 text-gray-600 hover:text-primary-green transition">About</a>
+    <a href="#favorites" class="block py-2 text-gray-600 hover:text-primary-green transition">Favorites</a>
+    <a href="#menu" class="block py-2 text-gray-600 hover:text-primary-green transition">Menu</a>
+    <a href="#contact" class="block py-2 text-gray-600 hover:text-primary-green transition">Visit Us</a>
+    <!-- Order Online Button for Mobile -->
+    <a href="#order-online" class="block py-2 bg-primary-green text-white rounded-lg text-center mt-2">
+      Order Online
+    </a>
+  </div>
+</header>
+
 
     <main>
         <!-- Hero Section -->
@@ -194,6 +202,34 @@
                 </div>
             </div>
         </section>
+
+        <!-- Order Online Section -->
+<section id="order-online" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="font-heading text-3xl md:text-4xl font-bold mb-6">Order Online</h2>
+    <p class="text-gray-600 mb-12">Get your favorite drinks delivered straight to your door.</p>
+    
+    <div class="grid md:grid-cols-2 gap-12 justify-center items-center">
+      <!-- DoorDash -->
+      <div class="bg-white shadow-lg p-6 rounded-xl flex flex-col items-center">
+        <img src="/images/doordash_logo.png" alt="DoorDash" class="h-16 mb-4">
+        <p class="text-gray-600 mb-4">Your cravings, delivered fast.</p>
+        <a href="https://www.doordash.com" target="_blank" class="bg-primary-green text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
+          Place Order
+        </a>
+      </div>
+      
+      <!-- UberEats -->
+      <div class="bg-white shadow-lg p-6 rounded-xl flex flex-col items-center">
+        <img src="/images/ubereats_logo.png" alt="UberEats" class="h-16 mb-4">
+        <p class="text-gray-600 mb-4">Fresh flavors, whenever you want.</p>
+        <a href="https://www.ubereats.com/store/tea-valley-spring-18379-kuykendahl-rd-a/2PdhcjJNQ_aJu3ovgfI2sA" target="_blank" class="bg-primary-green text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
+          Place Order
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 
         <!-- Contact & Location Section -->
