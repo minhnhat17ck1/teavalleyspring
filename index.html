@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Valley | Bubble Tea & Refreshers in Spring, TX</title>
     <meta name="description" content="Visit Tea Valley in Spring, TX for delicious, handcrafted bubble tea, fresh fruit refreshers, and savory snacks. View our menu and find your new favorite drink!">
-     <!-- TODO: Replace this placeholder href with the URL for your favicon image -->
+    
+    <!-- TODO: Replace this placeholder href with the URL for your favicon image -->
     <link rel="icon" href="/images/logo_leaf.ico">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
     <style>
         /* Custom styles inspired by the Tea Valley logo and store interior */
         body {
@@ -47,6 +50,33 @@
             }
         }
     </style>
+
+    <!-- 
+        SEO IMPROVEMENT: Local Business Schema
+        This code helps Google understand key information about your business,
+        which can help you rank better in local search results and show up with
+        more detail (like hours, address, etc.) in a knowledge panel.
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Tea Valley",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18379a Kuykendahl Rd Ste A",
+        "addressLocality": "Spring",
+        "addressRegion": "TX",
+        "postalCode": "77379",
+        "addressCountry": "US"
+      },
+      "telephone": "+18325593617",
+      "servesCuisine": "Bubble Tea",
+      "openingHours": "Mo-Su 11:00-21:00",
+      "url": "https://yourwebsite.com", // TODO: Replace with your actual domain name
+      "image": "https://yourwebsite.com/images/logo_leaf.png" // TODO: Replace with a full URL to an image
+    }
+    </script>
 </head>
 <body class="text-dark-text">
 
@@ -54,7 +84,7 @@
 <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
     <div class="flex items-center space-x-3">
-      <img src="/images/logo_leaf.png" alt="Tea Valley Logo" class="h-12 w-auto">
+      <img src="/images/logo_leaf.png" alt="Tea Valley Leaf Logo" class="h-12 w-auto">
       <span class="font-heading text-2xl font-bold text-dark-text">Tea Valley</span>
     </div>
     <nav class="hidden md:flex space-x-8 items-center">
@@ -62,7 +92,6 @@
       <a href="#favorites" class="text-gray-600 hover:text-primary-green transition">Favorites</a>
       <a href="#menu" class="text-gray-600 hover:text-primary-green transition">Menu</a>
       <a href="#contact" class="text-gray-600 hover:text-primary-green transition">Visit Us</a>
-      <!-- New Order Online Button -->
       <a href="#order-online" class="bg-green-700 text-white px-4 py-2 rounded-lg shadow transition">
         Order Online
       </a>
@@ -79,7 +108,6 @@
     <a href="#favorites" class="block py-2 text-gray-600 hover:text-primary-green transition">Favorites</a>
     <a href="#menu" class="block py-2 text-gray-600 hover:text-primary-green transition">Menu</a>
     <a href="#contact" class="block py-2 text-gray-600 hover:text-primary-green transition">Visit Us</a>
-    <!-- Order Online Button for Mobile -->
     <a href="#order-online" class="block py-2 bg-primary-green text-white rounded-lg text-center mt-2">
       Order Online
     </a>
@@ -92,7 +120,8 @@
         <section class="hero-bg min-h-[50vh] md:min-h-[70vh] flex items-center">
             <div class="container mx-auto px-6 text-center md:text-left">
                 <div class="md:w-1/2 lg:w-2/5">
-                    <h1 class="font-heading text-4xl md:text-6xl font-bold text-dark-text leading-tight">Your Daily Dose of Delight.</h1>
+                    <!-- SEO IMPROVEMENT: The H1 is the most important heading. It should be descriptive and include keywords. -->
+                    <h1 class="font-heading text-4xl md:text-6xl font-bold text-dark-text leading-tight">Handcrafted Bubble Tea in Spring, TX</h1>
                     <p class="mt-4 text-lg text-gray-700">Experience handcrafted bubble teas, fresh fruit refreshers, and irresistible snacks at Tea Valley. A moment of pure joy in every cup.</p>
                     <div class="mt-8">
                         <a href="#menu" class="bg-accent-pink text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition transform hover:scale-105 shadow-lg">View Our Menu</a>
@@ -114,8 +143,8 @@
                         <p class="text-gray-600">From our signature milk teas to our vibrant fruit refreshers and savory snacks, there's a taste of happiness waiting for everyone. Come in, relax, and find your favorite flavor!</p>
                     </div>
                     <div class="md:w-1/2">
-                        <!-- TODO: Replace this placeholder src with the URL for your store interior image (IMG_2159.jpg) -->
-                        <img src="/images/interior.jpeg" alt="Tea Valley store interior with floral sign" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+                        <img src="/images/interior.jpeg" alt="The welcoming and modern interior of the Tea Valley store in Spring, TX" class="rounded-lg shadow-xl w-full h-auto object-cover">
                     </div>
                 </div>
             </div>
@@ -132,7 +161,8 @@
       
       <!-- Favorite 1 -->
       <div class="bg-white rounded-lg shadow-lg w-full max-w-sm transform hover:-translate-y-2 transition duration-300 overflow-hidden flex flex-col">
-        <img src="/images/taro_crunch.webp" alt="Taro Crunch" class="w-full object-cover rounded-t-lg">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/taro_crunch.webp" alt="A cup of creamy Taro Crunch bubble tea with Oreo topping" class="w-full object-cover rounded-t-lg">
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="font-bold text-xl mb-2">Taro Crunch</h3>
           <p class="text-gray-600">
@@ -143,7 +173,8 @@
 
       <!-- Favorite 2 -->
       <div class="bg-white rounded-lg shadow-lg w-full max-w-sm transform hover:-translate-y-2 transition duration-300 overflow-hidden flex flex-col">
-        <img src="/images/tropical.webp" alt="Tropical Fruitea" class="w-full object-cover rounded-t-lg">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/tropical.webp" alt="A vibrant Tropical Fruitea with mixed fruit pieces" class="w-full object-cover rounded-t-lg">
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="font-bold text-xl mb-2">Tropical Fruitea</h3>
           <p class="text-gray-600">
@@ -154,7 +185,8 @@
 
       <!-- Favorite 3 -->
       <div class="bg-white rounded-lg shadow-lg w-full max-w-sm transform hover:-translate-y-2 transition duration-300 overflow-hidden flex flex-col">
-        <img src="/images/lygon.webp" alt="Lygon Fruitea" class="w-full object-cover rounded-t-lg">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/lygon.webp" alt="A refreshing Lygon Fruitea with lychee and dragonfruit flavors" class="w-full object-cover rounded-t-lg">
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="font-bold text-xl mb-2">Lygon Fruitea</h3>
           <p class="text-gray-600">
@@ -165,7 +197,8 @@
 
       <!-- Favorite 4 -->
       <div class="bg-white rounded-lg shadow-lg w-full max-w-sm transform hover:-translate-y-2 transition duration-300 overflow-hidden flex flex-col">
-        <img src="/images/oreo_cream.webp" alt="Oreo Cream Brown Sugar Milk Tea" class="w-full object-cover rounded-t-lg">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/oreo_cream.webp" alt="Oreo Cream Brown Sugar Milk Tea with a distinct boba layer" class="w-full object-cover rounded-t-lg">
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="font-bold text-xl mb-2">Oreo Cream Brown Sugar Milk Tea</h3>
           <p class="text-gray-600">
@@ -176,7 +209,8 @@
 
       <!-- Favorite 5 -->
       <div class="bg-white rounded-lg shadow-lg w-full max-w-sm transform hover:-translate-y-2 transition duration-300 overflow-hidden flex flex-col">
-        <img src="/images/mangonada.webp" alt="Mangonada" class="w-full object-cover rounded-t-lg">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/mangonada.webp" alt="A tangy Mangonada refresher with a tamarind stick" class="w-full object-cover rounded-t-lg">
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="font-bold text-xl mb-2">Mangonada</h3>
           <p class="text-gray-600">
@@ -195,10 +229,10 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12">Our Full Menu</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-                     <!-- TODO: Replace with your Drinks Menu image URL -->
-                    <img src="/images/menu.jpeg" alt="Tea Valley Drinks Menu" class="rounded-lg shadow-xl w-full h-auto">
-                     <!-- TODO: Replace with your Snacks Menu image URL -->
-                    <img src="images/snack.jpeg" alt="Tea Valley Snacks Menu" class="rounded-lg shadow-xl w-full h-auto">
+                      <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+                    <img src="/images/menu.jpeg" alt="Tea Valley's full drinks menu including milk teas, fruit teas, and refreshers" class="rounded-lg shadow-xl w-full h-auto">
+                      <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+                    <img src="images/snack.jpeg" alt="Tea Valley's snack menu featuring items like popcorn chicken and fries" class="rounded-lg shadow-xl w-full h-auto">
                 </div>
             </div>
         </section>
@@ -212,18 +246,20 @@
     <div class="grid md:grid-cols-2 gap-12 justify-center items-center">
       <!-- DoorDash -->
       <div class="bg-white shadow-lg p-6 rounded-xl flex flex-col items-center">
-        <img src="/images/doordash.webp" alt="DoorDash" class="h-16 mb-4">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/doordash.webp" alt="DoorDash logo for delivery" class="h-16 mb-4">
         <p class="text-gray-600 mb-4">Your cravings, delivered fast.</p>
-        <a href="https://www.doordash.com/store/tea-valley-spring-spring-36001807" target="_blank" class="bg-primary-green text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
+        <a href="https://www.doordash.com/store/tea-valley-spring-spring-36001807" target="_blank" rel="noopener noreferrer" class="bg-primary-green text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
           Place Order
         </a>
       </div>
       
       <!-- UberEats -->
       <div class="bg-white shadow-lg p-6 rounded-xl flex flex-col items-center">
-        <img src="/images/ubereats.webp" alt="UberEats" class="h-16 mb-4">
+        <!-- SEO IMPROVEMENT: Added more descriptive alt text -->
+        <img src="/images/ubereats.webp" alt="UberEats logo for delivery" class="h-16 mb-4">
         <p class="text-gray-600 mb-4">Fresh flavors, whenever you want.</p>
-        <a href="https://www.ubereats.com/store/tea-valley-spring-18379-kuykendahl-rd-a/2PdhcjJNQ_aJu3ovgfI2sA" target="_blank" class="bg-primary-green text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
+        <a href="https://www.ubereats.com/store/tea-valley-spring-18379-kuykendahl-rd-a/2PdhcjJNQ_aJu3ovgfI2sA" target="_blank" rel="noopener noreferrer" class="bg-primary-green text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
           Place Order
         </a>
       </div>
@@ -233,7 +269,7 @@
 
 
         <!-- Contact & Location Section -->
-        <section id="contact" class="py-16 md:py-24 bg-primary-green/20">
+        <section id="contact" class="py-16 md:py-24">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col lg:flex-row gap-12 items-center">
                     <!-- Map -->
@@ -245,6 +281,7 @@
                             style="border:0;"
                             allowfullscreen=""
                             loading="lazy"
+                            title="Google Map location for Tea Valley in Spring, TX"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
@@ -265,23 +302,20 @@
                             <h3 class="font-bold text-xl text-gray-900">Follow Us</h3>
                             <div class="flex items-center justify-center lg:justify-start space-x-6 mt-3">
                                 <!-- Instagram Icon -->
-                                <a href="https://www.instagram.com/teavalleyspring/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-pink-500 transition-colors duration-300">
+                                <a href="https://www.instagram.com/teavalleyspring/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-pink-500 transition-colors duration-300" aria-label="Visit our Instagram page">
                                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.153 2.153c.247.636.398 1.363.444 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.046 1.064-.197 1.791-.444 2.427a4.902 4.902 0 01-2.153 2.153c-.636.247-1.363.398-2.427.444-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.046-1.791-.197-2.427-.444a4.902 4.902 0 01-2.153-2.153c-.247-.636-.398-1.363-.444-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.046-1.064.197-1.791.444-2.427a4.902 4.902 0 012.153-2.153c.636-.247 1.363-.398 2.427-.444C9.531 2.013 9.885 2 12.315 2zM12 7.177a4.823 4.823 0 100 9.646 4.823 4.823 0 000-9.646zm0 7.923a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2zm4.518-7.932a1.146 1.146 0 100 2.292 1.146 1.146 0 000-2.292z" clip-rule="evenodd" />
                                     </svg>
-                                    <span class="sr-only">Instagram</span>
                                 </a>
                                 <!-- Facebook Icon -->
-                                <a href="https://www.facebook.com/profile.php?id=61580283362518" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                                <a href="https://www.facebook.com/profile.php?id=61580283362518" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors duration-300" aria-label="Visit our Facebook page">
                                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
                                     </svg>
-                                    <span class="sr-only">Facebook</span>
                                 </a>
                                 <!-- TikTok Icon -->
-                                <a href="tiktok.com/@teavalleyspring0825" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-black transition-colors duration-300">
-                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
-                                    <span class="sr-only">TikTok</span>
+                                <a href="https://www.tiktok.com/@teavalleyspring0825" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-black transition-colors duration-300" aria-label="Visit our TikTok page">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
                                 </a>
                             </div>
                         </div>
@@ -314,4 +348,3 @@
 
 </body>
 </html>
-
