@@ -3,358 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Valley Menu Redesign</title>
+    <title>Tea Valley - Digital Menu</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-        body {
-            background-color: #f0f0f0;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-            color: #3D3D3D;
+        /* Basic Setup for Fullscreen TV Display */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Hide scrollbars */
+            background-color: #000;
         }
 
-        .menu-container {
-            width: 1080px; /* Standard poster width */
-            height: 1920px; /* Standard poster height */
+        .tv-menu-container {
+            width: 100vw;
+            height: 100vh;
             background-color: #FDFBF5;
-            padding: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: #3D3D3D;
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
+            padding: 40px 60px;
         }
 
-        .menu-header {
+        /* Header Section with Logo and Illustrations */
+        .tv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #EAE1D3;
+        }
+
+        .header-logo-text {
             text-align: center;
-            margin-bottom: 40px;
-            border-bottom: 2px solid #EAE1D3;
-            padding-bottom: 30px;
+        }
+        
+        .header-logo-text img.logo {
+            width: 100px;
         }
 
-        .menu-header img.logo {
-            width: 90px;
-            margin-bottom: 15px;
-        }
-
-        .menu-header h1 {
-            font-size: 72px;
-            letter-spacing: 8px;
+        .header-logo-text h1 {
+            font-size: 84px;
             font-weight: 700;
+            letter-spacing: 12px;
             margin: 0;
             color: #333;
         }
 
-        .menu-header p {
-            font-size: 16px;
-            margin: 5px 0;
-            color: #555;
+        .header-illustration {
+            width: 180px; /* Adjust size as needed */
         }
-
-        .menu-content {
+        
+        /* Main Content Grid */
+        .tv-content {
+            flex-grow: 1; /* Allows this section to fill available space */
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 45px;
-            flex-grow: 1;
-        }
-
-        .menu-column {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .menu-section {
-            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px 40px; /* Row and Column gap */
+            padding: 30px 0;
+            overflow: hidden;
         }
 
         .menu-section h2 {
-            font-size: 28px;
+            font-size: 36px;
             font-weight: 600;
             letter-spacing: 1px;
             color: #B19470;
-            margin-bottom: 20px;
+            margin-top: 0;
+            margin-bottom: 25px;
             padding-bottom: 10px;
             border-bottom: 1px solid #EAE1D3;
             text-transform: uppercase;
         }
 
         .menu-item {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            font-size: 18px;
+            align-items: baseline;
+            font-size: 24px;
             font-weight: 600;
+            margin: 0;
         }
         
         .item-name {
             display: flex;
             align-items: center;
         }
-
+        
         .item-name .star {
             color: #D4AF37;
-            margin-right: 8px;
-            font-size: 16px;
+            margin-right: 10px;
+            font-size: 20px;
         }
 
         .item-description {
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 300;
             color: #666;
-            margin-top: 4px;
-            padding-right: 15px; /* prevent text from hitting price */
-        }
-        
-        .menu-footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #EAE1D3;
+            margin: 5px 0 0 0;
+            padding-right: 15px;
         }
 
-        .customization-section {
+        /* Footer Section */
+        .tv-footer {
+            padding-top: 20px;
+            border-top: 3px solid #EAE1D3;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-left {
+             flex-basis: 50%;
+        }
+
+        .footer-right {
+            flex-basis: 45%;
             text-align: center;
         }
-        
-        .customization-options h3, .toppings-section h3 {
-            font-size: 22px;
+
+        .toppings-section h3, .customization-options h3 {
+            font-size: 28px;
             color: #B19470;
             margin-bottom: 15px;
             text-transform: uppercase;
             font-weight: 600;
-        }
-        
-        .options-visual {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .options-visual img {
-            width: 50px;
-            height: 50px;
+            margin-top: 0;
         }
 
         .toppings-section ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             columns: 2;
             -webkit-columns: 2;
             -moz-columns: 2;
         }
 
         .toppings-section li {
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .customization-visuals {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
         }
 
+        .options-visual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .options-visual p {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+        
+        .icon-row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .icon-row img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .footer-address {
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+        }
 
     </style>
 </head>
 <body>
 
-    <div class="menu-container">
+    <div class="tv-menu-container">
         
-        <header class="menu-header">
-            <img src="https://i.imgur.com/vHq1F3W.png" alt="Tea Valley Logo" class="logo">
-            <h1>MENU</h1>
-            <p>18379A KUYKENDHAL RD SPRING, TX 77379 | (832) 559-3617</p>
-            <p>WE ARE OPEN EVERYDAY 11:00 AM - 9:00 PM</p>
+        <header class="tv-header">
+            <img src="https://i.imgur.com/gK2RyrC.png" alt="Boba Drinker" class="header-illustration">
+            
+            <div class="header-logo-text">
+                <img src="https://i.imgur.com/vHq1F3W.png" alt="Tea Valley Logo" class="logo">
+                <h1>MENU</h1>
+            </div>
+
+            <img src="https://i.imgur.com/uStsXyA.png" alt="Capybara" class="header-illustration">
         </header>
 
-        <div class="menu-content">
-
+        <main class="tv-content">
+            
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>The Classics</h2>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">The Classic Milk Tea</span> <span>$5.45</span></div>
-                        <p class="item-description">Black Tea / Jasmine Tea</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Jasmine Green Tea</span> <span>$5.00</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Crème Brûlée Milk Tea</span> <span>$6.25</span></div>
-                        <p class="item-description">Classic milk tea with torched Crème Brûlée foam</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Cream Cheese Milk Tea</span> <span>$6.25</span></div>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Fresh Taro Milk Tea</span> <span>$5.95</span></div>
-                        <p class="item-description">Creamy milk tea with a hearty scoop of our homemade taro paste</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Thai Milk Tea</span> <span>$5.95</span></div>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Thai Green Milk Tea</span> <span>$5.95</span></div>
-                    </div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">The Classic Milk Tea</span> <span>$5.45</span></div><p class="item-description">Black Tea / Jasmine Tea</p></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Jasmine Green Tea</span> <span>$5.00</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Crème Brûlée Milk Tea</span> <span>$6.25</span></div><p class="item-description">Classic milk tea with torched Crème Brûlée foam</p></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Cream Cheese Milk Tea</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Fresh Taro Milk Tea</span> <span>$5.95</span></div><p class="item-description">Creamy milk tea with our homemade taro paste</p></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Thai Milk Tea</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Thai Green Milk Tea</span> <span>$5.95</span></div></div>
                 </section>
-                
                 <section class="menu-section">
-                    <h2>House Specialties</h2>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name"><span class="star">★</span>Taro Crunch</span> <span>$6.95</span></div>
-                        <p class="item-description">Creamy Taro Smoothie blended with Oreo Crumbs, topped with Oreo Cream</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Tropical Yogurt</span> <span>$6.45</span></div>
-                        <p class="item-description">Fresh Strawberry, Mango, Lychee, Peach, and Yogurt Popping</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name"><span class="star">★</span>Mangonada</span> <span>$7.45</span></div>
-                        <p class="item-description">24oz of fresh Mango with chamoy, tajin, fresh mango chunks, and a tamarind stick</p>
-                    </div>
-                </section>
-                
-                 <section class="menu-section">
                     <h2>Smoothies</h2>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Mango</span><span>$6.25</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Avocado</span><span>$6.25</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Strawberry</span><span>$6.25</span></div>
-                    </div>
+                    <div class="menu-item"><div class="item-header"><span>Mango</span><span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Avocado</span><span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Strawberry</span><span>$6.25</span></div></div>
                 </section>
             </div>
 
             <div class="menu-column">
-                 <section class="menu-section">
+                <section class="menu-section">
                     <h2>Brown Sugar Series</h2>
-                    <p class="item-description" style="margin-top:-15px; margin-bottom: 15px;">Included Black Tapioca</p>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name"><span class="star">★</span>Brown Sugar Milk Tea</span> <span>$6.25</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Brown Sugar Boba Fresh Milk</span> <span>$6.25</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Brown Sugar Boba w/ Cream Cheese</span> <span>$6.75</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Brown Sugar Boba w/ Crème Brûlée</span> <span>$6.75</span></div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div>
-                        <p class="item-description">Topped with Oreo Cream Foam</p>
-                    </div>
+                    <p class="item-description" style="margin-top:-20px; margin-bottom: 20px;">Included Black Tapioca</p>
+                    <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Brown Sugar Milk Tea</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba Fresh Milk</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba w/ Cream Cheese</span> <span>$6.75</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba w/ Crème Brûlée</span> <span>$6.75</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div><p class="item-description">Topped with Oreo Cream Foam</p></div>
                 </section>
-                
+                <section class="menu-section">
+                    <h2>House Specialties</h2>
+                    <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Taro Crunch</span> <span>$6.95</span></div><p class="item-description">Creamy Taro Smoothie blended with Oreo Crumbs</p></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name">Tropical Yogurt</span> <span>$6.45</span></div><p class="item-description">Strawberry, Mango, Lychee, Peach & Yogurt Popping</p></div>
+                    <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Mangonada</span> <span>$7.45</span></div><p class="item-description">24oz Mango with chamoy, tajin & tamarind stick</p></div>
+                </section>
+            </div>
+
+            <div class="menu-column">
                 <section class="menu-section">
                     <h2>Fruitea Refreshers</h2>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Tropical Fruitea</span> <span>$6.45</span></div>
-                        <p class="item-description">Pineapple, Strawberry, Mango, Lychee, Watermelon, and Orange</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Lygon Fruitea</span> <span>$5.95</span></div>
-                        <p class="item-description">Lychee and Dragonfruit</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Passion Mango Fruitea</span> <span>$5.95</span></div>
-                        <p class="item-description">Mango and Passionfruit</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Kiwi Basil Fruitea</span> <span>$5.45</span></div>
-                        <p class="item-description">Kiwi and Basil Seeds</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Mango Fruitea</span> <span>$5.45</span></div>
-                        <p class="item-description">Fresh Mango</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Strawberry Fruitea</span> <span>$5.45</span></div>
-                        <p class="item-description">Fresh Strawberry</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Soursop Fruitea</span> <span>$5.95</span></div>
-                        <p class="item-description">Mãng Cầu / Guanábana</p>
-                    </div>
+                    <div class="menu-item"><div class="item-header"><span>Tropical Fruitea</span> <span>$6.45</span></div><p class="item-description">Pineapple, Strawberry, Mango, Lychee, Watermelon, Orange</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Lygon Fruitea</span> <span>$5.95</span></div><p class="item-description">Lychee and Dragonfruit</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Passion Mango Fruitea</span> <span>$5.95</span></div><p class="item-description">Mango and Passionfruit</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Kiwi Basil Fruitea</span> <span>$5.45</span></div><p class="item-description">Kiwi and Basil Seeds</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Mango Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Mango</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Strawberry Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Strawberry</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Soursop Fruitea</span> <span>$5.95</span></div><p class="item-description">Mãng Cầu / Guanábana</p></div>
                 </section>
             </div>
 
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>Uji Matcha Series</h2>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Cold Whisked Matcha Latte</span> <span>$6.95</span></div>
-                        <p class="item-description">Smooth, earthy matcha whisked cold and blended with creamy oat milk</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Matcha Cloud Latte</span> <span>$7.25</span></div>
-                        <p class="item-description">Smooth, earthy matcha whisked cold and blended with creamy oat milk</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Oreo Cheese Matcha</span> <span>$7.25</span></div>
-                        <p class="item-description">Rich matcha latte topped with oreo crumble and a velvety cheese foam</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Brown Sugar Matcha Latte</span> <span>$6.95</span></div>
-                        <p class="item-description">Smooth, earthy matcha whisked cold and blended with creamy oat milk</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Matcha Crème Brûlée</span> <span>$7.25</span></div>
-                        <p class="item-description">Smooth, earthy matcha whisked cold and blended with creamy oat milk</p>
-                    </div>
+                    <div class="menu-item"><div class="item-header"><span>Cold Whisked Matcha Latte</span> <span>$6.95</span></div><p class="item-description">Smooth, earthy matcha with creamy oat milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Matcha Cloud Latte</span> <span>$7.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Oreo Cheese Matcha</span> <span>$7.25</span></div><p class="item-description">Rich matcha latte with oreo crumble & cheese foam</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Matcha Latte</span> <span>$6.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Matcha Crème Brûlée</span> <span>$7.25</span></div></div>
                 </section>
-                
-                <section class="menu-section">
+                 <section class="menu-section">
                     <h2>Coffee</h2>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Black Coffee</span> <span></span></div>
-                        <p class="item-description">Bold, smooth slow-dripped black coffee, lightly sweetened</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Vietnamese Coffee</span> <span></span></div>
-                        <p class="item-description">Classic Saigon-style coffee with rich condensed milk</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Salted Cheese Coffee</span> <span></span></div>
-                        <p class="item-description">Vietnamese coffee with salted cheese foam</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Ube Coffee</span> <span></span></div>
-                        <p class="item-description">Vietnamese coffee with ube milk foam</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name"><span class="star">★</span>Bac Siu (Viet Latte)</span> <span></span></div>
-                        <p class="item-description">Slow-dripped black coffee with condensed milk and extra milk</p>
-                    </div>
-                     <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Coco Bac Siu</span> <span></span></div>
-                        <p class="item-description">Slow-dripped black coffee with creamy coconut milk</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Pandan Bac Siu</span> <span></span></div>
-                        <p class="item-description">Slow-dripped black coffee with pandan soy milk</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-header"><span class="item-name">Ube Bac Siu</span> <span></span></div>
-                        <p class="item-description">Slow-dripped black coffee with sweet ube and taro syrup</p>
-                    </div>
+                    <div class="menu-item"><div class="item-header"><span><span class="star">★</span>Bac Siu (Viet Latte)</span></div><p class="item-description">Slow-dripped coffee with condensed milk and extra milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Vietnamese Coffee</span></div><p class="item-description">Classic Saigon-style coffee with rich condensed milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Salted Cheese Coffee</span></div><p class="item-description">Vietnamese coffee with salted cheese foam</p></div>
                 </section>
             </div>
 
-        </div>
+        </main>
 
-        <footer class="menu-footer">
-            <div class="customization-section">
+        <footer class="tv-footer">
+            <div class="footer-left">
                 <div class="toppings-section">
-                    <h3>Toppings (+$0.80)</h3>
+                    <h3>Toppings (+ $0.80)</h3>
                     <ul>
                         <li>Black Tapioca</li>
                         <li>Crystal Boba</li>
@@ -363,30 +288,36 @@
                         <li>Rainbow Jelly</li>
                         <li>Lychee Jelly</li>
                         <li>Mango Jelly</li>
-                        <li>Strawberry Jelly</li>
-                        <li>Coconut Jelly</li>
                         <li>Coffee Jelly</li>
                         <li>Mango Popping</li>
                         <li>Strawberry Popping</li>
-                        <li>Lychee Popping</li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer-right">
                 <div class="customization-options">
-                    <h3>Sweetness & Ice</h3>
-                    <p><strong>SWEETNESS</strong></p>
-                    <div class="options-visual">
-                        <img src="https://i.imgur.com/gK9gYfN.png" alt="0%">
-                        <img src="https://i.imgur.com/k6lD3t6.png" alt="25%">
-                        <img src="https://i.imgur.com/6D3Q9hM.png" alt="50%">
-                        <img src="https://i.imgur.com/o3x0VjQ.png" alt="100%">
+                    <h3>Customize Your Drink</h3>
+                    <div class="customization-visuals">
+                        <div class="options-visual">
+                            <p>SWEETNESS</p>
+                            <div class="icon-row">
+                                <img src="https://i.imgur.com/gK9gYfN.png" alt="0%">
+                                <img src="https://i.imgur.com/k6lD3t6.png" alt="25%">
+                                <img src="https://i.imgur.com/6D3Q9hM.png" alt="50%">
+                                <img src="https://i.imgur.com/o3x0VjQ.png" alt="100%">
+                            </div>
+                        </div>
+                        <div class="options-visual">
+                            <p>ICE</p>
+                            <div class="icon-row">
+                                <img src="https://i.imgur.com/pYqL6Jt.png" alt="0%">
+                                <img src="https://i.imgur.com/dC3S2sR.png" alt="25%">
+                                <img src="https://i.imgur.com/xO9fBvT.png" alt="50%">
+                                <img src="https://i.imgur.com/J7bX6fL.png" alt="100%">
+                            </div>
+                        </div>
                     </div>
-                    <p><strong>ICE</strong></p>
-                     <div class="options-visual">
-                        <img src="https://i.imgur.com/pYqL6Jt.png" alt="0%">
-                        <img src="https://i.imgur.com/dC3S2sR.png" alt="25%">
-                        <img src="https://i.imgur.com/xO9fBvT.png" alt="50%">
-                        <img src="https://i.imgur.com/J7bX6fL.png" alt="100%">
-                    </div>
+                    <p class="footer-address">18379A KUYKENDHAL RD SPRING, TX 77379 | (832) 559-3617</p>
                 </div>
             </div>
         </footer>
