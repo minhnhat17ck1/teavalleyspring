@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Valley - Digital Menu</title>
+    <title>Tea Valley - Digital Menu with Images</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -40,6 +40,7 @@
 
         .header-logo-text {
             text-align: center;
+            flex-grow: 1; /* Allow logo and text to take center space */
         }
         
         .header-logo-text img.logo {
@@ -68,20 +69,26 @@
             overflow: hidden;
         }
 
+        .menu-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Spacing between items and images */
+        }
+
         .menu-section h2 {
             font-size: 36px;
             font-weight: 600;
             letter-spacing: 1px;
             color: #B19470;
             margin-top: 0;
-            margin-bottom: 25px;
+            margin-bottom: 10px; /* Reduced for better flow with images */
             padding-bottom: 10px;
             border-bottom: 1px solid #EAE1D3;
             text-transform: uppercase;
         }
 
         .menu-item {
-            margin-bottom: 25px;
+            margin-bottom: 10px; /* Reduced for better flow with images */
         }
 
         .item-header {
@@ -110,6 +117,13 @@
             color: #666;
             margin: 5px 0 0 0;
             padding-right: 15px;
+        }
+
+        .drink-image {
+            width: 100%; /* Make image responsive to column width */
+            height: auto;
+            border-radius: 8px; /* Slightly rounded corners for aesthetic */
+            margin-bottom: 15px; /* Spacing below image */
         }
 
         /* Footer Section */
@@ -212,17 +226,13 @@
                     <h2>The Classics</h2>
                     <div class="menu-item"><div class="item-header"><span class="item-name">The Classic Milk Tea</span> <span>$5.45</span></div><p class="item-description">Black Tea / Jasmine Tea</p></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Jasmine Green Tea</span> <span>$5.00</span></div></div>
+                    <img src="https://i.imgur.com/p112PzC.png" alt="Crème Brûlée Milk Tea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span class="item-name">Crème Brûlée Milk Tea</span> <span>$6.25</span></div><p class="item-description">Classic milk tea with torched Crème Brûlée foam</p></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Cream Cheese Milk Tea</span> <span>$6.25</span></div></div>
+                    <img src="https://i.imgur.com/k9v98G4.png" alt="Fresh Taro Milk Tea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span class="item-name">Fresh Taro Milk Tea</span> <span>$5.95</span></div><p class="item-description">Creamy milk tea with our homemade taro paste</p></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Thai Milk Tea</span> <span>$5.95</span></div></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Thai Green Milk Tea</span> <span>$5.95</span></div></div>
-                </section>
-                <section class="menu-section">
-                    <h2>Smoothies</h2>
-                    <div class="menu-item"><div class="item-header"><span>Mango</span><span>$6.25</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Avocado</span><span>$6.25</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Strawberry</span><span>$6.25</span></div></div>
                 </section>
             </div>
 
@@ -230,16 +240,19 @@
                 <section class="menu-section">
                     <h2>Brown Sugar Series</h2>
                     <p class="item-description" style="margin-top:-20px; margin-bottom: 20px;">Included Black Tapioca</p>
+                    <img src="https://i.imgur.com/7gNlUuw.png" alt="Brown Sugar Milk Tea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Brown Sugar Milk Tea</span> <span>$6.25</span></div></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba Fresh Milk</span> <span>$6.25</span></div></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba w/ Cream Cheese</span> <span>$6.75</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba w/ Crème Brûlée</span> <span>$6.75</span></div></div>
+                    <img src="https://i.imgur.com/m2pU86r.png" alt="Oreo Cream B.S. Milk Tea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span class="item-name">Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div><p class="item-description">Topped with Oreo Cream Foam</p></div>
                 </section>
                 <section class="menu-section">
                     <h2>House Specialties</h2>
+                    <img src="https://i.imgur.com/oVj36nZ.png" alt="Taro Crunch" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Taro Crunch</span> <span>$6.95</span></div><p class="item-description">Creamy Taro Smoothie blended with Oreo Crumbs</p></div>
                     <div class="menu-item"><div class="item-header"><span class="item-name">Tropical Yogurt</span> <span>$6.45</span></div><p class="item-description">Strawberry, Mango, Lychee, Peach & Yogurt Popping</p></div>
+                    <img src="https://i.imgur.com/F0yN62w.png" alt="Mangonada" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Mangonada</span> <span>$7.45</span></div><p class="item-description">24oz Mango with chamoy, tajin & tamarind stick</p></div>
                 </section>
             </div>
@@ -247,10 +260,13 @@
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>Fruitea Refreshers</h2>
+                    <img src="https://i.imgur.com/eB3995H.png" alt="Tropical Fruitea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span>Tropical Fruitea</span> <span>$6.45</span></div><p class="item-description">Pineapple, Strawberry, Mango, Lychee, Watermelon, Orange</p></div>
                     <div class="menu-item"><div class="item-header"><span>Lygon Fruitea</span> <span>$5.95</span></div><p class="item-description">Lychee and Dragonfruit</p></div>
+                    <img src="https://i.imgur.com/P0iJ8uK.png" alt="Passion Mango Fruitea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span>Passion Mango Fruitea</span> <span>$5.95</span></div><p class="item-description">Mango and Passionfruit</p></div>
                     <div class="menu-item"><div class="item-header"><span>Kiwi Basil Fruitea</span> <span>$5.45</span></div><p class="item-description">Kiwi and Basil Seeds</p></div>
+                    <img src="https://i.imgur.com/s6E5B3z.png" alt="Mango Fruitea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span>Mango Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Mango</p></div>
                     <div class="menu-item"><div class="item-header"><span>Strawberry Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Strawberry</p></div>
                     <div class="menu-item"><div class="item-header"><span>Soursop Fruitea</span> <span>$5.95</span></div><p class="item-description">Mãng Cầu / Guanábana</p></div>
@@ -261,15 +277,16 @@
                 <section class="menu-section">
                     <h2>Uji Matcha Series</h2>
                     <div class="menu-item"><div class="item-header"><span>Cold Whisked Matcha Latte</span> <span>$6.95</span></div><p class="item-description">Smooth, earthy matcha with creamy oat milk</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Matcha Cloud Latte</span> <span>$7.25</span></div></div>
+                    <img src="https://i.imgur.com/xO9fBvT.png" alt="Matcha Cloud Latte" class="drink-image"> <div class="menu-item"><div class="item-header"><span>Matcha Cloud Latte</span> <span>$7.25</span></div></div>
                     <div class="menu-item"><div class="item-header"><span>Oreo Cheese Matcha</span> <span>$7.25</span></div><p class="item-description">Rich matcha latte with oreo crumble & cheese foam</p></div>
                     <div class="menu-item"><div class="item-header"><span>Brown Sugar Matcha Latte</span> <span>$6.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Matcha Crème Brûlée</span> <span>$7.25</span></div></div>
                 </section>
                  <section class="menu-section">
                     <h2>Coffee</h2>
+                    <img src="https://i.imgur.com/fL3sB1D.png" alt="Bac Siu" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span><span class="star">★</span>Bac Siu (Viet Latte)</span></div><p class="item-description">Slow-dripped coffee with condensed milk and extra milk</p></div>
                     <div class="menu-item"><div class="item-header"><span>Vietnamese Coffee</span></div><p class="item-description">Classic Saigon-style coffee with rich condensed milk</p></div>
+                    <img src="https://i.imgur.com/6E2728r.png" alt="Coco Bac Siu" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span>Salted Cheese Coffee</span></div><p class="item-description">Vietnamese coffee with salted cheese foam</p></div>
                 </section>
             </div>
