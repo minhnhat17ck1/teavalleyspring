@@ -29,7 +29,7 @@
             padding: 40px 60px;
         }
 
-        /* Header Section with Logo and Illustrations */
+        /* Header Section */
         .tv-header {
             display: flex;
             justify-content: space-between;
@@ -62,15 +62,15 @@
         }
 
         .header-illustration {
-            width: 180px; /* Adjust size as needed */
+            width: 180px;
         }
         
-        /* Main Content Grid */
+        /* Main 4-Column Content Grid */
         .tv-content {
-            flex-grow: 1; /* Allows this section to fill available space */
+            flex-grow: 1;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px 40px; /* Row and Column gap */
+            gap: 20px 40px;
             padding: 30px 0;
             overflow: hidden;
         }
@@ -78,13 +78,12 @@
         .menu-column {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 40px; /* Space between sections in the same column */
         }
 
         .menu-section h2 {
             font-size: 36px;
             font-weight: 600;
-            letter-spacing: 1px;
             color: #B19470;
             margin-top: 0;
             margin-bottom: 25px;
@@ -94,7 +93,7 @@
         }
 
         .menu-item {
-            margin-bottom: 20px;
+            margin-bottom: 22px; /* Adjusted spacing for descriptions */
         }
 
         .item-header {
@@ -144,9 +143,9 @@
                     <h2>The Classics</h2>
                     <div class="menu-item"><div class="item-header"><span>The Classic Milk Tea</span> <span>$5.45</span></div><p class="item-description">Black Tea / Jasmine Tea</p></div>
                     <div class="menu-item"><div class="item-header"><span>Jasmine Green Tea</span> <span>$5.00</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Crème Brûlée Milk Tea</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Crème Brûlée Milk Tea</span> <span>$6.25</span></div><p class="item-description">Classic milk tea with torched crème brûlée foam</p></div>
                     <div class="menu-item"><div class="item-header"><span>Cream Cheese Milk Tea</span> <span>$6.25</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Fresh Taro Milk Tea</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Fresh Taro Milk Tea</span> <span>$5.95</span></div><p class="item-description">Creamy milk tea with a scoop of homemade taro paste</p></div>
                     <div class="menu-item"><div class="item-header"><span>Thai Milk Tea</span> <span>$5.95</span></div></div>
                     <div class="menu-item"><div class="item-header"><span>Thai Green Milk Tea</span> <span>$5.95</span></div></div>
                 </section>
@@ -157,39 +156,33 @@
                     <div class="menu-item"><div class="item-header"><span>Brown Sugar Boba Fresh Milk</span> <span>$6.25</span></div></div>
                     <div class="menu-item"><div class="item-header"><span>Brown Sugar Boba w/ Cream Cheese</span> <span>$6.75</span></div></div>
                     <div class="menu-item"><div class="item-header"><span>Brown Sugar Boba w/ Crème Brûlée</span> <span>$6.75</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div><p class="item-description">Topped with Oreo cream foam</p></div>
                 </section>
             </div>
 
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>Saigon Drip Coffee</h2>
-                    <div class="menu-item"><div class="item-header"><span>Black Coffee</span> <span>$6.45</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Vietnamese Coffee</span> <span>$5.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Salted Cheese Coffee</span> <span>$5.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Ube Coffee</span> <span>$5.45</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Bac Xiu (Viet Latte)</span> <span>$6.45</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Coco Bac Xiu</span> <span>$5.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Pandan Bac Xiu</span> <span>$5.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Ube Bac Xiu</span> <span>$5.95</span></div></div>
-                </section>
-                 <section class="menu-section">
-                    <h2>Specialties</h2>
-                    <div class="menu-item"><div class="item-header"><span>Taro Crunch</span> <span>$6.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Tropical Yogurt</span> <span>$6.45</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Mangonada</span> <span>$7.45</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Black Coffee</span> <span>$6.45</span></div><p class="item-description">Bold, slow-dripped black coffee, lightly sweetened</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Vietnamese Coffee</span> <span>$5.95</span></div><p class="item-description">Classic Saigon-style coffee with rich condensed milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Salted Cheese Coffee</span> <span>$5.95</span></div><p class="item-description">Vietnamese coffee topped with salted cheese foam</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Ube Coffee</span> <span>$5.45</span></div><p class="item-description">Vietnamese coffee with a rich ube milk foam</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Bac Xiu (Viet Latte)</span> <span>$6.45</span></div><p class="item-description">Slow-dripped coffee with condensed milk & extra milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Coco Bac Xiu</span> <span>$5.95</span></div><p class="item-description">Slow-dripped coffee with creamy coconut milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Pandan Bac Xiu</span> <span>$5.95</span></div><p class="item-description">Slow-dripped coffee infused with pandan soy milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Ube Bac Xiu</span> <span>$5.95</span></div><p class="item-description">Slow-dripped coffee with sweet ube & taro syrup</p></div>
                 </section>
             </div>
 
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>Fruitea Refresher</h2>
-                    <div class="menu-item"><div class="item-header"><span>Tropical Fruitea</span> <span>$6.45</span></div><p class="item-description">Pineapple, Strawberry, Mango, Lychee, Watermelon, Orange</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Lygon Fruitea</span> <span>$5.95</span></div><p class="item-description">Lychee and Dragonfruit</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Passion Mango Fruitea</span> <span>$5.95</span></div><p class="item-description">Mango and Passionfruit</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Kiwi Basil Fruitea</span> <span>$5.45</span></div><p class="item-description">Kiwi and Basil Seeds</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Mango Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Mango</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Strawberry Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Strawberry</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Tropical Fruitea</span> <span>$6.45</span></div><p class="item-description">Pineapple, Strawberry, Mango, Lychee, Watermelon & Orange</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Lygon Fruitea</span> <span>$5.95</span></div><p class="item-description">A refreshing blend of Lychee and Dragonfruit</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Passion Mango Fruitea</span> <span>$5.95</span></div><p class="item-description">A sweet and tart mix of Mango and Passionfruit</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Kiwi Basil Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Kiwi blended with nutritious basil seeds</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Mango Fruitea</span> <span>$5.45</span></div><p class="item-description">Made with fresh, sweet Mango</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Strawberry Fruitea</span> <span>$5.45</span></div><p class="item-description">Made with fresh Strawberries</p></div>
                     <div class="menu-item"><div class="item-header"><span>Soursop Fruitea</span> <span>$5.95</span></div><p class="item-description">Mãng Cầu / Guanábana</p></div>
                 </section>
             </div>
@@ -197,14 +190,19 @@
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>Uji Matcha Series</h2>
-                    <div class="menu-item"><div class="item-header"><span>Cold Whisked Matcha Latte</span> <span>$6.95</span></div><p class="item-description">Smooth, earthy matcha with creamy oat milk</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Oreo Cheese Matcha</span> <span>$7.25</span></div><p class="item-description">Rich matcha latte topped with Oreo crumble</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Cold Whisked Matcha Latte</span> <span>$6.95</span></div><p class="item-description">Smooth, earthy matcha whisked with creamy oat milk</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Oreo Cheese Matcha</span> <span>$7.25</span></div><p class="item-description">Rich matcha latte with Oreo crumble & velvety cheese foam</p></div>
                     <div class="menu-item"><div class="item-header"><span>Matcha Crème Brûlée</span> <span>$7.25</span></div></div>
                     <div class="menu-item"><div class="item-header"><span>Matcha Cloud Latte</span> <span>$6.95</span></div></div>
                     <div class="menu-item"><div class="item-header"><span>Brown Sugar Matcha Latte</span> <span>$7.25</span></div></div>
                 </section>
+                <section class="menu-section">
+                    <h2>Specialties</h2>
+                    <div class="menu-item"><div class="item-header"><span>Taro Crunch</span> <span>$6.95</span></div><p class="item-description">Creamy taro smoothie blended with Oreo crumbs</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Tropical Yogurt</span> <span>$6.45</span></div><p class="item-description">Strawberry, Mango, Lychee, Peach & Yogurt Popping boba</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Mangonada</span> <span>$7.45</span></div><p class="item-description">24oz mango slushy, chamoy, tajin & tamarind stick</p></div>
+                </section>
             </div>
-
         </main>
     </div>
 
