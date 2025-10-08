@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Valley - Digital Menu with Images</title>
+    <title>Tea Valley - Digital Menu</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -40,7 +40,6 @@
 
         .header-logo-text {
             text-align: center;
-            flex-grow: 1; /* Allow logo and text to take center space */
         }
         
         .header-logo-text img.logo {
@@ -53,6 +52,13 @@
             letter-spacing: 12px;
             margin: 0;
             color: #333;
+        }
+        
+        .header-info p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 2px 0;
+            text-align: right;
         }
 
         .header-illustration {
@@ -68,11 +74,11 @@
             padding: 30px 0;
             overflow: hidden;
         }
-
-        .menu-section {
+        
+        .menu-column {
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Spacing between items and images */
+            gap: 30px;
         }
 
         .menu-section h2 {
@@ -81,14 +87,14 @@
             letter-spacing: 1px;
             color: #B19470;
             margin-top: 0;
-            margin-bottom: 10px; /* Reduced for better flow with images */
+            margin-bottom: 25px;
             padding-bottom: 10px;
             border-bottom: 1px solid #EAE1D3;
             text-transform: uppercase;
         }
 
         .menu-item {
-            margin-bottom: 10px; /* Reduced for better flow with images */
+            margin-bottom: 20px;
         }
 
         .item-header {
@@ -99,17 +105,6 @@
             font-weight: 600;
             margin: 0;
         }
-        
-        .item-name {
-            display: flex;
-            align-items: center;
-        }
-        
-        .item-name .star {
-            color: #D4AF37;
-            margin-right: 10px;
-            font-size: 20px;
-        }
 
         .item-description {
             font-size: 18px;
@@ -117,89 +112,6 @@
             color: #666;
             margin: 5px 0 0 0;
             padding-right: 15px;
-        }
-
-        .drink-image {
-            width: 100%; /* Make image responsive to column width */
-            height: auto;
-            border-radius: 8px; /* Slightly rounded corners for aesthetic */
-            margin-bottom: 15px; /* Spacing below image */
-        }
-
-        /* Footer Section */
-        .tv-footer {
-            padding-top: 20px;
-            border-top: 3px solid #EAE1D3;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        .footer-left {
-             flex-basis: 50%;
-        }
-
-        .footer-right {
-            flex-basis: 45%;
-            text-align: center;
-        }
-
-        .toppings-section h3, .customization-options h3 {
-            font-size: 28px;
-            color: #B19470;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-top: 0;
-        }
-
-        .toppings-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            columns: 2;
-            -webkit-columns: 2;
-            -moz-columns: 2;
-        }
-
-        .toppings-section li {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        
-        .customization-visuals {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .options-visual {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .options-visual p {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0 0 10px 0;
-        }
-        
-        .icon-row {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .icon-row img {
-            width: 60px;
-            height: 60px;
-        }
-        
-        .footer-address {
-            margin-top: 15px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #555;
         }
 
     </style>
@@ -214,9 +126,15 @@
             <div class="header-logo-text">
                 <img src="https://i.imgur.com/vHq1F3W.png" alt="Tea Valley Logo" class="logo">
                 <h1>MENU</h1>
+                <p style="font-size: 18px; margin-top: 5px;">WE ARE OPEN EVERYDAY 11:00 AM - 9:00 PM</p>
             </div>
-
-            <img src="https://i.imgur.com/uStsXyA.png" alt="Capybara" class="header-illustration">
+            
+            <div class="header-info">
+                 <img src="https://i.imgur.com/uStsXyA.png" alt="Capybara" class="header-illustration" style="margin-left: auto; display: block;">
+                 <p>18379A KUYKENDHAL RD</p>
+                 <p>SPRING, TX 77379</p>
+                 <p>(832) 559-3617</p>
+            </div>
         </header>
 
         <main class="tv-content">
@@ -224,49 +142,52 @@
             <div class="menu-column">
                 <section class="menu-section">
                     <h2>The Classics</h2>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">The Classic Milk Tea</span> <span>$5.45</span></div><p class="item-description">Black Tea / Jasmine Tea</p></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Jasmine Green Tea</span> <span>$5.00</span></div></div>
-                    <img src="https://i.imgur.com/p112PzC.png" alt="Crème Brûlée Milk Tea" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Crème Brûlée Milk Tea</span> <span>$6.25</span></div><p class="item-description">Classic milk tea with torched Crème Brûlée foam</p></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Cream Cheese Milk Tea</span> <span>$6.25</span></div></div>
-                    <img src="https://i.imgur.com/k9v98G4.png" alt="Fresh Taro Milk Tea" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Fresh Taro Milk Tea</span> <span>$5.95</span></div><p class="item-description">Creamy milk tea with our homemade taro paste</p></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Thai Milk Tea</span> <span>$5.95</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Thai Green Milk Tea</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>The Classic Milk Tea</span> <span>$5.45</span></div><p class="item-description">Black Tea / Jasmine Tea</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Jasmine Green Tea</span> <span>$5.00</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Crème Brûlée Milk Tea</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Cream Cheese Milk Tea</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Fresh Taro Milk Tea</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Thai Milk Tea</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Thai Green Milk Tea</span> <span>$5.95</span></div></div>
                 </section>
-            </div>
-
-            <div class="menu-column">
                 <section class="menu-section">
                     <h2>Brown Sugar Series</h2>
-                    <p class="item-description" style="margin-top:-20px; margin-bottom: 20px;">Included Black Tapioca</p>
-                    <img src="https://i.imgur.com/7gNlUuw.png" alt="Brown Sugar Milk Tea" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Brown Sugar Milk Tea</span> <span>$6.25</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba Fresh Milk</span> <span>$6.25</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Brown Sugar Boba w/ Cream Cheese</span> <span>$6.75</span></div></div>
-                    <img src="https://i.imgur.com/m2pU86r.png" alt="Oreo Cream B.S. Milk Tea" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div><p class="item-description">Topped with Oreo Cream Foam</p></div>
-                </section>
-                <section class="menu-section">
-                    <h2>House Specialties</h2>
-                    <img src="https://i.imgur.com/oVj36nZ.png" alt="Taro Crunch" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Taro Crunch</span> <span>$6.95</span></div><p class="item-description">Creamy Taro Smoothie blended with Oreo Crumbs</p></div>
-                    <div class="menu-item"><div class="item-header"><span class="item-name">Tropical Yogurt</span> <span>$6.45</span></div><p class="item-description">Strawberry, Mango, Lychee, Peach & Yogurt Popping</p></div>
-                    <img src="https://i.imgur.com/F0yN62w.png" alt="Mangonada" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span class="item-name"><span class="star">★</span>Mangonada</span> <span>$7.45</span></div><p class="item-description">24oz Mango with chamoy, tajin & tamarind stick</p></div>
+                    <p class="item-description" style="margin-top:-20px;">(Includes Boba)</p>
+                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Milk Tea</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Boba Fresh Milk</span> <span>$6.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Boba w/ Cream Cheese</span> <span>$6.75</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Boba w/ Crème Brûlée</span> <span>$6.75</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Oreo Cream B.S. Milk Tea</span> <span>$6.95</span></div></div>
                 </section>
             </div>
 
             <div class="menu-column">
                 <section class="menu-section">
-                    <h2>Fruitea Refreshers</h2>
-                    <img src="https://i.imgur.com/eB3995H.png" alt="Tropical Fruitea" class="drink-image">
+                    <h2>Saigon Drip Coffee</h2>
+                    <div class="menu-item"><div class="item-header"><span>Black Coffee</span> <span>$6.45</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Vietnamese Coffee</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Salted Cheese Coffee</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Ube Coffee</span> <span>$5.45</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Bac Xiu (Viet Latte)</span> <span>$6.45</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Coco Bac Xiu</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Pandan Bac Xiu</span> <span>$5.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Ube Bac Xiu</span> <span>$5.95</span></div></div>
+                </section>
+                 <section class="menu-section">
+                    <h2>Specialties</h2>
+                    <div class="menu-item"><div class="item-header"><span>Taro Crunch</span> <span>$6.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Tropical Yogurt</span> <span>$6.45</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Mangonada</span> <span>$7.45</span></div></div>
+                </section>
+            </div>
+
+            <div class="menu-column">
+                <section class="menu-section">
+                    <h2>Fruitea Refresher</h2>
                     <div class="menu-item"><div class="item-header"><span>Tropical Fruitea</span> <span>$6.45</span></div><p class="item-description">Pineapple, Strawberry, Mango, Lychee, Watermelon, Orange</p></div>
                     <div class="menu-item"><div class="item-header"><span>Lygon Fruitea</span> <span>$5.95</span></div><p class="item-description">Lychee and Dragonfruit</p></div>
-                    <img src="https://i.imgur.com/P0iJ8uK.png" alt="Passion Mango Fruitea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span>Passion Mango Fruitea</span> <span>$5.95</span></div><p class="item-description">Mango and Passionfruit</p></div>
                     <div class="menu-item"><div class="item-header"><span>Kiwi Basil Fruitea</span> <span>$5.45</span></div><p class="item-description">Kiwi and Basil Seeds</p></div>
-                    <img src="https://i.imgur.com/s6E5B3z.png" alt="Mango Fruitea" class="drink-image">
                     <div class="menu-item"><div class="item-header"><span>Mango Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Mango</p></div>
                     <div class="menu-item"><div class="item-header"><span>Strawberry Fruitea</span> <span>$5.45</span></div><p class="item-description">Fresh Strawberry</p></div>
                     <div class="menu-item"><div class="item-header"><span>Soursop Fruitea</span> <span>$5.95</span></div><p class="item-description">Mãng Cầu / Guanábana</p></div>
@@ -277,68 +198,14 @@
                 <section class="menu-section">
                     <h2>Uji Matcha Series</h2>
                     <div class="menu-item"><div class="item-header"><span>Cold Whisked Matcha Latte</span> <span>$6.95</span></div><p class="item-description">Smooth, earthy matcha with creamy oat milk</p></div>
-                    <img src="https://i.imgur.com/xO9fBvT.png" alt="Matcha Cloud Latte" class="drink-image"> <div class="menu-item"><div class="item-header"><span>Matcha Cloud Latte</span> <span>$7.25</span></div></div>
-                    <div class="menu-item"><div class="item-header"><span>Oreo Cheese Matcha</span> <span>$7.25</span></div><p class="item-description">Rich matcha latte with oreo crumble & cheese foam</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Matcha Latte</span> <span>$6.95</span></div></div>
-                </section>
-                 <section class="menu-section">
-                    <h2>Coffee</h2>
-                    <img src="https://i.imgur.com/fL3sB1D.png" alt="Bac Siu" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span><span class="star">★</span>Bac Siu (Viet Latte)</span></div><p class="item-description">Slow-dripped coffee with condensed milk and extra milk</p></div>
-                    <div class="menu-item"><div class="item-header"><span>Vietnamese Coffee</span></div><p class="item-description">Classic Saigon-style coffee with rich condensed milk</p></div>
-                    <img src="https://i.imgur.com/6E2728r.png" alt="Coco Bac Siu" class="drink-image">
-                    <div class="menu-item"><div class="item-header"><span>Salted Cheese Coffee</span></div><p class="item-description">Vietnamese coffee with salted cheese foam</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Oreo Cheese Matcha</span> <span>$7.25</span></div><p class="item-description">Rich matcha latte topped with Oreo crumble</p></div>
+                    <div class="menu-item"><div class="item-header"><span>Matcha Crème Brûlée</span> <span>$7.25</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Matcha Cloud Latte</span> <span>$6.95</span></div></div>
+                    <div class="menu-item"><div class="item-header"><span>Brown Sugar Matcha Latte</span> <span>$7.25</span></div></div>
                 </section>
             </div>
 
         </main>
-
-        <footer class="tv-footer">
-            <div class="footer-left">
-                <div class="toppings-section">
-                    <h3>Toppings (+ $0.80)</h3>
-                    <ul>
-                        <li>Black Tapioca</li>
-                        <li>Crystal Boba</li>
-                        <li>Crystal Taro</li>
-                        <li>Crystal Matcha</li>
-                        <li>Rainbow Jelly</li>
-                        <li>Lychee Jelly</li>
-                        <li>Mango Jelly</li>
-                        <li>Coffee Jelly</li>
-                        <li>Mango Popping</li>
-                        <li>Strawberry Popping</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="customization-options">
-                    <h3>Customize Your Drink</h3>
-                    <div class="customization-visuals">
-                        <div class="options-visual">
-                            <p>SWEETNESS</p>
-                            <div class="icon-row">
-                                <img src="https://i.imgur.com/gK9gYfN.png" alt="0%">
-                                <img src="https://i.imgur.com/k6lD3t6.png" alt="25%">
-                                <img src="https://i.imgur.com/6D3Q9hM.png" alt="50%">
-                                <img src="https://i.imgur.com/o3x0VjQ.png" alt="100%">
-                            </div>
-                        </div>
-                        <div class="options-visual">
-                            <p>ICE</p>
-                            <div class="icon-row">
-                                <img src="https://i.imgur.com/pYqL6Jt.png" alt="0%">
-                                <img src="https://i.imgur.com/dC3S2sR.png" alt="25%">
-                                <img src="https://i.imgur.com/xO9fBvT.png" alt="50%">
-                                <img src="https://i.imgur.com/J7bX6fL.png" alt="100%">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="footer-address">18379A KUYKENDHAL RD SPRING, TX 77379 | (832) 559-3617</p>
-                </div>
-            </div>
-        </footer>
-
     </div>
 
 </body>
