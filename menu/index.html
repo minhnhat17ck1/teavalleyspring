@@ -78,89 +78,19 @@
     }
     </script>
 </head>
-<body class="text-dark-text">
 
-    <!-- Header -->
-<header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-      <img src="/images/logo_leaf.png" alt="Tea Valley Leaf Logo" class="h-12 w-auto">
-      <span class="font-heading text-2xl font-bold text-dark-text">Tea Valley</span>
-    </div>
-    <nav class="hidden md:flex space-x-8 items-center">
-      <a href="#about" class="text-gray-600 hover:text-primary-green transition">About</a>
-      <a href="#favorites" class="text-gray-600 hover:text-primary-green transition">Favorites</a>
-      <a href="#menu" class="text-gray-600 hover:text-primary-green transition">Menu</a>
-      <a href="#contact" class="text-gray-600 hover:text-primary-green transition">Visit Us</a>
-      <a href="#order-online" class="bg-green-700 text-white px-4 py-2 rounded-lg shadow transition">
-        Order Online
-      </a>
-    </nav>
-    <button id="mobile-menu-button" class="md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-      </svg>
-    </button>
-  </div>
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-    <a href="https://www.teavalleyspring.com/#about" class="block py-2 text-gray-600 hover:text-primary-green transition">About</a>
-    <a href="https://www.teavalleyspring.com/#favorites" class="block py-2 text-gray-600 hover:text-primary-green transition">Favorites</a>
-    <a href="#menu" class="block py-2 text-gray-600 hover:text-primary-green transition">Menu</a>
-    <a href="https://www.teavalleyspring.com/#contact" class="block py-2 text-gray-600 hover:text-primary-green transition">Visit Us</a>
-    <a href="https://www.teavalleyspring.com/#order-online" class="block py-2 bg-primary-green text-white rounded-lg text-center mt-2">
-      Order Online
-    </a>
-  </div>
-</header>
-
-
-  <body class="text-gray-800">
-<section id="menu" class="py-16 md:py-24">
-<div class="container mx-auto px-6 text-center">
-<h2 class="font-heading text-3xl md:text-4xl font-bold mb-12">Our Full Menu</h2>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<button data-lb-src="/images/menu.jpeg" data-lb-alt="Tea Valley drink menu">
-<img src="/images/menu.jpeg" alt="Tea Valley drink menu" class="aspect-[3/4] w-full object-cover rounded-lg shadow-md hover:opacity-90 transition" />
-</button>
-<button data-lb-src="/images/snack.jpeg" data-lb-alt="Tea Valley snack menu">
-<img src="/images/snack.jpeg" alt="Tea Valley snack menu" class="aspect-[3/4] w-full object-cover rounded-lg shadow-md hover:opacity-90 transition" />
-</button>
-</div>
-</div>
-
-
-<!-- Lightbox -->
-<div id="lightbox" class="lb-hidden fixed inset-0 z-50 items-center justify-center lightbox-backdrop p-3">
-<div class="relative w-full h-full md:w-auto md:h-auto max-w-5xl">
-<img id="lb-image" alt="Expanded menu" class="w-full h-full object-contain rounded-lg bg-white" />
-<button id="lb-close" class="absolute top-4 right-4 bg-black/60 text-white rounded-full p-2" aria-label="Close">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path fill-rule="evenodd" d="M6.225 4.811a1 1 0 011.414 0L12 9.172l4.361-4.361a1 1 0 111.414 1.414L13.414 10.586l4.361 4.361a1 1 0 01-1.414 1.414L12 12l-4.361 4.361a1 1 0 01-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-</button>
-</div>
-</div>
-</section>
-
-
-<script>
-const lb = document.getElementById('lightbox');
-const lbImg = document.getElementById('lb-image');
-const lbClose = document.getElementById('lb-close');
-document.querySelectorAll('[data-lb-src]').forEach(btn => {
-btn.addEventListener('click', () => {
-lbImg.src = btn.dataset.lbSrc;
-lbImg.alt = btn.dataset.lbAlt;
-lb.classList.replace('lb-hidden','lb-visible');
-});
-});
-lbClose.addEventListener('click',()=>lb.classList.replace('lb-visible','lb-hidden'));
-lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.replace('lb-visible','lb-hidden')});
-</script>
-</body>
 
 
         <!-- Menu Section -->
-  
+  <section id="menu" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12">Our Full Menu</h2>
+                <div class="grid grid-cols-1 gap-8 md:gap-12">
+                      <img src="/images/menu.jpeg" alt="Tea Valley's full drinks menu including milk teas, fruit teas, and refreshers" class="rounded-lg shadow-xl w-full max-w-2xl h-auto mx-auto">
+                      <img src="/images/snack.jpeg" alt="Tea Valley's snack menu featuring items like popcorn chicken and fries" class="rounded-lg shadow-xl w-full max-w-2xl h-auto mx-auto">
+                </div>
+            </div>
+        </section>
 
         <!-- Contact & Location Section -->
         <section id="contact" class="py-16 md:py-24">
