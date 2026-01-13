@@ -12,28 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
     <style>
-        /* Custom styles inspired by the Tea Valley logo and store interior */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F9F6F1; /* A soft cream background */
+            background-color: #F9F6F1;
         }
         .font-heading {
             font-family: 'Playfair Display', serif;
         }
         .bg-primary-green {
-            background-color: #A4BCA8; /* Soft green from the logo */
+            background-color: #A4BCA8;
         }
         .text-primary-green {
             color: #A4BCA8;
         }
         .bg-accent-pink {
-            background-color: #E58C8A; /* Vibrant pink from the store's wall art */
-        }
-        .text-accent-pink {
-            color: #E58C8A;
-        }
-        .bg-dark-text {
-            background-color: #3D3D3D;
+            background-color: #E58C8A;
         }
         .text-dark-text {
             color: #3D3D3D;
@@ -103,12 +96,13 @@
         
         <div class="text-center mb-12">
             <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4 text-dark-text">Our Menu</h2>
+            <p class="text-gray-600 mb-4">Handcrafted with premium ingredients.</p>
             <div class="inline-block bg-primary-green/20 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
-                🌱 Make it yours! We offer Oat, Almond, Soy, & Whole Milk.
+                Milk options: Oat, Coconut, Whole, Lactose Free
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
 
             <div class="bg-[#F9F6F1] p-6 rounded-xl shadow-sm border border-gray-100">
                 <h3 class="font-heading text-2xl font-bold text-primary-green mb-4 border-b pb-2">The Classics</h3>
@@ -126,14 +120,14 @@
                             <span class="font-bold text-dark-text">Jasmine Cloud</span>
                             <span class="text-gray-600">$5.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Fragrant jasmine green tea topped with rich salted cheese foam.</p>
+                        <p class="text-xs text-gray-500 mt-1">Jasmine green tea topped with house salted cheese foam.</p>
                     </div>
                     <div>
                         <div class="flex justify-between items-baseline">
                             <span class="font-bold text-dark-text">Fresh Taro Milk Tea</span>
                             <span class="text-gray-600">$5.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Creamy milk tea with a hearty scoop of homemade taro paste.</p>
+                        <p class="text-xs text-gray-500 mt-1">Homemade taro paste.</p>
                     </div>
                     <div class="flex justify-between items-baseline">
                         <span class="font-bold text-dark-text">Thai Milk Tea</span>
@@ -144,9 +138,7 @@
 
             <div class="bg-[#F9F6F1] p-6 rounded-xl shadow-sm border border-gray-100">
                 <h3 class="font-heading text-2xl font-bold text-primary-green mb-4 border-b pb-2">Brown Sugar Series</h3>
-                <p class="text-xs text-gray-500 mb-4 italic">*Boba Included</p>
-                
-                <div class="space-y-4">
+                <p class="text-xs text-gray-500 mb-4 italic font-bold">Boba Included</p> <div class="space-y-4">
                     <div class="flex justify-between items-baseline">
                         <span class="font-bold text-dark-text">Brown Sugar Boba Milk Tea</span>
                         <span class="text-gray-600">$6.25</span>
@@ -156,15 +148,15 @@
                         <span class="text-gray-600">$6.25</span>
                     </div>
                     <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">B.S. Boba Milk Tea w/ Brûlée</span>
+                        <span class="font-bold text-dark-text">B.S. Boba Milk Tea w/ Crème Brûlée</span>
                         <span class="text-gray-600">$6.75</span>
                     </div>
                     <div>
                         <div class="flex justify-between items-baseline">
-                            <span class="font-bold text-dark-text">Oreo Cream B.S. Boba</span>
+                            <span class="font-bold text-dark-text">Oreo Cream B.S. Boba Milk Tea</span>
                             <span class="text-gray-600">$6.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Topped with Oreo crumbs and House Cream Foam.</p>
+                        <p class="text-xs text-gray-500 mt-1">Topped with Oreo Crumbs and House Cream Foam.</p>
                     </div>
                 </div>
             </div>
@@ -178,34 +170,107 @@
                             <span class="font-bold text-dark-text">Cold Whisked Matcha Latte</span>
                             <span class="text-gray-600">$6.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Smooth, earthy matcha whisked cold with creamy oat milk.</p>
+                        <p class="text-xs text-gray-500 mt-1">Cold-whisked matcha blended with creamy oat milk.</p>
                     </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Matcha Crème Brûlée</span>
-                        <span class="text-gray-600">$7.25</span>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Oreo Cheese Matcha</span>
+                            <span class="text-gray-600">$7.25</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Matcha latte topped with Oreo crumble and cheese foam.</p>
                     </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Oreo Cheese Matcha</span>
-                        <span class="text-gray-600">$7.25</span>
+                    <div>
+                         <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Matcha Crème Brûlée</span>
+                            <span class="text-gray-600">$7.25</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Matcha latte finished with a caramelized crème brûlée top.</p>
                     </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Matcha Cloud Latte</span>
-                        <span class="text-gray-600">$7.25</span>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Matcha Cloud Latte</span>
+                            <span class="text-gray-600">$7.25</span>
+                        </div>
+                         <p class="text-xs text-gray-500 mt-1">Bold matcha with sweet cream.</p>
                     </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Brown Sugar Boba Matcha Latte</span>
-                        <span class="text-gray-600">$7.25</span>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Brown Sugar Boba Matcha Latte</span>
+                            <span class="text-gray-600">$7.25</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Matcha with brown sugar syrup, creamy oat milk, and boba.</p>
                     </div>
                     <div>
                         <div class="flex justify-between items-baseline">
                             <span class="font-bold text-dark-text">Strawberry Dream Matcha</span>
                             <span class="text-gray-600">$7.45</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Strawberry purée layered with creamy milk and matcha.</p>
+                        <p class="text-xs text-gray-500 mt-1">Strawberry purée layered with oat milk, matcha, and house strawberry cream.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Ube Matcha</span>
+                            <span class="text-gray-600">$7.25</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Rich matcha paired with house ube cream.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#F9F6F1] p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 class="font-heading text-2xl font-bold text-primary-green mb-4 border-b pb-2">Fruitea Refresher</h3>
+                <p class="text-xs text-gray-500 mb-4 italic">Non-caffeinated options available</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Tropical Fruitea</span>
+                            <span class="text-gray-600">$6.45</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Pineapple, Strawberry, Mango, Lychee, Watermelon, and Orange.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Lygon Fruitea</span>
+                            <span class="text-gray-600">$5.95</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Lychee and Dragonfruit.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Passion Mango Fruitea</span>
+                            <span class="text-gray-600">$5.95</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Mango and Passionfruit.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Jade Lychee Jasmine</span>
+                            <span class="text-gray-600">$5.45</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Green Grape and Lychee.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Golden Peach Jasmine</span>
+                            <span class="text-gray-600">$5.45</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Fresh Orange and Smashed Peach.</p>
+                    </div>
+                     <div class="flex justify-between items-baseline">
+                        <span class="font-bold text-dark-text">Kiwi Basil Fruitea</span>
+                        <span class="text-gray-600">$5.45</span>
                     </div>
                     <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Ube Matcha</span>
-                        <span class="text-gray-600">$7.25</span>
+                        <span class="font-bold text-dark-text">Strawberry Fruitea</span>
+                        <span class="text-gray-600">$5.45</span>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Fresh Orange Juice</span>
+                            <span class="text-gray-600">$5.95</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Fresh Squeezed Orange Juice.</p>
                     </div>
                 </div>
             </div>
@@ -233,47 +298,28 @@
                             <span class="font-bold text-dark-text">Ube Coffee</span>
                             <span class="text-gray-600">$6.75</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Vietnamese coffee with ube milk foam</p>
+                        <p class="text-xs text-gray-500 mt-1">Vietnamese coffee with ube milk foam.</p>
                     </div>
                     <div>
                         <div class="flex justify-between items-baseline">
-                            <span class="font-bold text-dark-text">Bac Xiu (Viet Latte)</span>
+                            <span class="font-bold text-dark-text">Viet Latte</span>
                             <span class="text-gray-600">$5.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Slow-dripped black coffee with condensed milk and whole milk</p>
+                        <p class="text-xs text-gray-500 mt-1">Slow-dripped black coffee with condensed milk and whole milk.</p>
                     </div>
                     <div>
                         <div class="flex justify-between items-baseline">
                             <span class="font-bold text-dark-text">Coco Bac Xiu</span>
                             <span class="text-gray-600">$5.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Slow-dripped black coffee with creamy coconut milk (Dairy-free available)</p>
+                        <p class="text-xs text-gray-500 mt-1">Slow-dripped black coffee with creamy coconut milk.</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="bg-[#F9F6F1] p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 class="font-heading text-2xl font-bold text-primary-green mb-4 border-b pb-2">Fruitea Refresher</h3>
-                
-                <div class="space-y-4">
                     <div>
                         <div class="flex justify-between items-baseline">
-                            <span class="font-bold text-dark-text">Tropical Fruitea</span>
-                            <span class="text-gray-600">$6.45</span>
+                            <span class="font-bold text-dark-text">Ube Bac Xiu</span>
+                            <span class="text-gray-600">$5.95</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Pineapple, Strawberry, Mango, Lychee, Watermelon, and Orange.</p>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Lygon Fruitea (Lychee/Dragonfruit)</span>
-                        <span class="text-gray-600">$5.95</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Passion Mango Fruitea</span>
-                        <span class="text-gray-600">$5.95</span>
-                    </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Strawberry Fruitea</span>
-                        <span class="text-gray-600">$5.45</span>
+                        <p class="text-xs text-gray-500 mt-1">Slow-dripped black coffee with whole milk and ube syrup.</p>
                     </div>
                 </div>
             </div>
@@ -284,24 +330,43 @@
                 <div class="space-y-4">
                     <div>
                         <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Taro Crunch</span>
+                            <span class="text-gray-600">$6.95</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Creamy taro blended with Oreo crumbs, topped with house taro paste.</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
                             <span class="font-bold text-dark-text">Mangonada</span>
                             <span class="text-gray-600">$7.25</span>
                         </div>
-                        <p class="text-xs text-gray-500 mt-1">Mango slush with chamoy, Tajin, fresh mango chunks, and tamarind stick.</p>
+                        <p class="text-xs text-gray-500 mt-1">Sweet & tangy mango with chamoy, Tajín, fresh mango chunks, and a tamarind stick.</p>
                     </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Taro Crunch</span>
-                        <span class="text-gray-600">$6.95</span>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Banana Biscoff Matcha</span>
+                            <span class="text-gray-600">$7.45</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Matcha latte topped with banana cream and Biscoff crunch.</p>
                     </div>
-                    <div class="flex justify-between items-baseline">
-                        <span class="font-bold text-dark-text">Tropical Yogurt</span>
-                        <span class="text-gray-600">$6.45</span>
-                    </div>
-                    <div class="pt-2 mt-2 border-t border-gray-200">
+
+                    <div class="pt-2 mt-4 border-t border-gray-200">
                         <h4 class="font-heading text-xl font-bold text-primary-green mb-2">Smoothies</h4>
                         <div class="flex justify-between items-baseline">
-                            <span class="font-bold text-dark-text">Avocado / Mango / Strawberry</span>
+                            <span class="font-bold text-dark-text">Avocado</span>
                             <span class="text-gray-600">$6.25</span>
+                        </div>
+                         <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Mango</span>
+                            <span class="text-gray-600">$6.25</span>
+                        </div>
+                         <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Strawberry</span>
+                            <span class="text-gray-600">$6.25</span>
+                        </div>
+                         <div class="flex justify-between items-baseline">
+                            <span class="font-bold text-dark-text">Strawberry Banana</span>
+                            <span class="text-gray-600">$6.45</span>
                         </div>
                     </div>
                 </div>
@@ -309,19 +374,8 @@
 
         </div>
 
-        <div class="mt-12 text-center bg-white p-6 rounded-xl shadow-sm border border-gray-100 max-w-2xl mx-auto">
-            <h3 class="font-heading text-xl font-bold text-dark-text mb-2">Toppings (+$0.95)</h3>
-            <div class="text-gray-600 leading-relaxed">
-                <p>• Black Tapioca</p>
-                <p>• Crystal (Original, Taro, Matcha)</p>
-                <p>• Poppings (Mango, Strawberry, Lychee)</p>
-                <p>• Jellies (Rainbow, Lychee, Mango, Coconut, Coffee)</p>
-            </div>
-        </div>
-
     </div>
 </section>
-
 
 <section id="contact" class="py-16 md:py-24">
     <div class="container mx-auto px-6">
