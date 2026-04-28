@@ -24,6 +24,7 @@
         .pudding-banner { background: linear-gradient(135deg, #FFF3D6 0%, #FFE8A8 100%); border: 1.5px solid #F5D060 }
         .pop-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none }
         .pop-scroll::-webkit-scrollbar { display: none }
+        .new-badge { display: inline-block; background: #E58C8A; color: #fff; font-size: 9px; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.5px }
     </style>
     <script type="application/ld+json">
     {
@@ -74,6 +75,7 @@
       </div>
     </div>
 
+    <!-- Category Nav -->
     <div class="sticky top-[72px] z-40 bg-white/90 backdrop-blur-md border-b border-gray-100 -mx-6 px-6 mb-8">
       <div class="cat-nav flex gap-2 py-3 max-w-4xl mx-auto">
         <button class="cat-btn active" data-target="sec-classics">The Classics</button>
@@ -89,150 +91,78 @@
       </div>
     </div>
 
-    <!-- Top 9 Popular Drinks -->
+    <!-- Popular Drinks -->
     <div class="max-w-4xl mx-auto mb-12">
       <h3 class="font-heading text-xl font-bold text-dark-text mb-4 text-center">Our Popular Drinks</h3>
       <div class="pop-scroll flex gap-4 pb-4 -mx-2 px-2 snap-x snap-mandatory">
         <a href="#sec-specialties" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="https://www.teavalleyspring.com/images/taro_crunch.webp" alt="Taro Crunch" class="w-full h-40 object-cover">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Taro Crunch</p>
-          <p class="text-[10px] text-gray-400">$6.95</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="https://www.teavalleyspring.com/images/taro_crunch.webp" alt="Taro Crunch" class="w-full h-40 object-cover"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Taro Crunch</p><p class="text-[10px] text-gray-400">$6.95</p>
         </a>
         <a href="#sec-jasmine" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="https://www.teavalleyspring.com/images/tropical.webp" alt="Tropical Fruitea" class="w-full h-40 object-cover">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Tropical Fruitea</p>
-          <p class="text-[10px] text-gray-400">$6.45</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="https://www.teavalleyspring.com/images/tropical.webp" alt="Tropical Fruitea" class="w-full h-40 object-cover"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Tropical Fruitea</p><p class="text-[10px] text-gray-400">$6.45</p>
         </a>
         <a href="#sec-jasmine" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="https://www.teavalleyspring.com/images/lygon.webp" alt="Lygon Fruitea" class="w-full h-40 object-cover">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Lygon Fruitea</p>
-          <p class="text-[10px] text-gray-400">$5.95</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="https://www.teavalleyspring.com/images/lygon.webp" alt="Lygon Fruitea" class="w-full h-40 object-cover"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Lygon Fruitea</p><p class="text-[10px] text-gray-400">$5.95</p>
         </a>
         <a href="#sec-brown-sugar" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="https://www.teavalleyspring.com/images/oreo_cream.webp" alt="Oreo Cream Brown Sugar Boba" class="w-full h-40 object-cover">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Oreo Cream B.S. Boba</p>
-          <p class="text-[10px] text-gray-400">$6.95</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="https://www.teavalleyspring.com/images/oreo_cream.webp" alt="Oreo Cream Brown Sugar Boba" class="w-full h-40 object-cover"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Oreo Cream B.S. Boba</p><p class="text-[10px] text-gray-400">$6.95</p>
         </a>
         <a href="#sec-specialties" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="https://www.teavalleyspring.com/images/mangonada.webp" alt="Mangonada" class="w-full h-40 object-cover">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Mangonada</p>
-          <p class="text-[10px] text-gray-400">$7.25</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="https://www.teavalleyspring.com/images/mangonada.webp" alt="Mangonada" class="w-full h-40 object-cover"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Mangonada</p><p class="text-[10px] text-gray-400">$7.25</p>
         </a>
         <a href="#sec-matcha" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="/images/popular/strawberry_dream_matcha.webp" alt="Strawberry Dream Matcha" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#f48fb1,#66bb6a)';this.style.display='none'">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Strawberry Dream Matcha</p>
-          <p class="text-[10px] text-gray-400">$7.45</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="/images/popular/strawberry_dream_matcha.webp" alt="Strawberry Dream Matcha" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#f48fb1,#66bb6a)';this.style.display='none'"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Strawberry Dream Matcha</p><p class="text-[10px] text-gray-400">$7.45</p>
         </a>
         <a href="#sec-matcha" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="/images/popular/creme_brulee_matcha.webp" alt="Crème Brûlée Matcha" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#c8e6c9,#f9a825)';this.style.display='none'">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Crème Brûlée Matcha</p>
-          <p class="text-[10px] text-gray-400">$7.25</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="/images/popular/creme_brulee_matcha.webp" alt="Crème Brûlée Matcha" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#c8e6c9,#f9a825)';this.style.display='none'"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Crème Brûlée Matcha</p><p class="text-[10px] text-gray-400">$7.25</p>
         </a>
         <a href="#sec-saigon" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="/images/popular/salted_cheese_coffee.webp" alt="Salted Cheese Coffee" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#d7ccc8,#795548)';this.style.display='none'">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Salted Cheese Coffee</p>
-          <p class="text-[10px] text-gray-400">$6.45</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="/images/popular/salted_cheese_coffee.webp" alt="Salted Cheese Coffee" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#d7ccc8,#795548)';this.style.display='none'"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">Salted Cheese Coffee</p><p class="text-[10px] text-gray-400">$6.45</p>
         </a>
         <a href="#sec-brown-sugar" class="group text-center flex-shrink-0 snap-start" style="width:130px">
-          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100">
-            <img src="/images/popular/bs_boba_creme_brulee.webp" alt="Brown Sugar Boba w/ Crème Brûlée" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#ffe0b2,#6d4c41)';this.style.display='none'">
-          </div>
-          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">B.S. Boba Crème Brûlée</p>
-          <p class="text-[10px] text-gray-400">$6.75</p>
+          <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 border border-gray-100"><img src="/images/popular/bs_boba_creme_brulee.webp" alt="Brown Sugar Boba w/ Crème Brûlée" class="w-full h-40 object-cover" onerror="this.parentElement.style.background='linear-gradient(135deg,#ffe0b2,#6d4c41)';this.style.display='none'"></div>
+          <p class="mt-2 text-xs font-bold text-dark-text group-hover:text-primary-green transition">B.S. Boba Crème Brûlée</p><p class="text-[10px] text-gray-400">$6.75</p>
         </a>
       </div>
     </div>
 
     <div class="max-w-4xl mx-auto space-y-12">
 
-      <!-- THE CLASSICS -->
+      <!-- ═══ THE CLASSICS ═══ -->
       <div id="sec-classics" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">The Classics</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mt-4">
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text">The Classic Milk Tea</span>
-            <span class="text-gray-500 ml-3">$5.45</span>
-          </div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text">Jasmine Green Tea</span>
-            <span class="text-gray-500 ml-3">$4.95</span>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text">Earl's Garden</span>
-              <span class="text-gray-500 ml-3">$6.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Earl Grey milk tea with lychee jelly, egg pudding &amp; grass jelly.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Jasmine Cloud <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Jasmine green tea topped with house salted cheese foam.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Fresh Taro Milk Tea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Homemade taro paste.</p>
-          </div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text">Thai Milk Tea</span>
-            <span class="text-gray-500 ml-3">$5.45</span>
-          </div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text">Matcha Milk Tea</span>
-            <span class="text-gray-500 ml-3">$5.45</span>
-          </div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">The Classic Milk Tea</span><span class="text-gray-500 ml-3">$5.45</span></div><p class="text-xs text-gray-400 mt-1">Black tea / Earl Grey tea.</p></div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Jasmine Green Tea</span><span class="text-gray-500 ml-3">$4.95</span></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Earl's Garden</span><span class="text-gray-500 ml-3">$6.45</span></div><p class="text-xs text-gray-400 mt-1">Earl Grey milk tea with lychee jelly, egg pudding &amp; grass jelly.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Jasmine Cloud <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Jasmine green tea topped with house salted cheese foam.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Fresh Taro Milk Tea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Homemade taro paste.</p></div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Thai Milk Tea</span><span class="text-gray-500 ml-3">$5.45</span></div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Matcha Milk Tea</span><span class="text-gray-500 ml-3">$5.45</span></div>
         </div>
       </div>
 
-      <!-- BROWN SUGAR SERIES -->
+      <!-- ═══ BROWN SUGAR SERIES ═══ -->
       <div id="sec-brown-sugar" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-0 border-b-2 border-primary-green/30 pb-2">Brown Sugar Series</h3>
         <p class="text-xs text-gray-500 italic font-semibold mt-2 mb-3">Boba included</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1">
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text flex items-center">Brown Sugar Boba Milk Tea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-            <span class="text-gray-500 ml-3">$6.25</span>
-          </div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text">Brown Sugar Boba Fresh Milk</span>
-            <span class="text-gray-500 ml-3">$6.25</span>
-          </div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text">Brown Sugar Boba Milk Tea w/ Crème Brûlée</span>
-            <span class="text-gray-500 ml-3">$6.75</span>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Oreo Cream Brown Sugar Boba <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$6.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Topped with Oreo crumbs and house sweet cream.</p>
-          </div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text flex items-center">Brown Sugar Boba Milk Tea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$6.25</span></div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Brown Sugar Boba Fresh Milk</span><span class="text-gray-500 ml-3">$6.25</span></div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Brown Sugar Boba Milk Tea w/ Crème Brûlée</span><span class="text-gray-500 ml-3">$6.75</span></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Oreo Cream Brown Sugar Boba <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$6.95</span></div><p class="text-xs text-gray-400 mt-1">Topped with Oreo crumbs and house sweet cream.</p></div>
         </div>
       </div>
 
-      <!-- ICE BLENDED SERIES -->
+      <!-- ═══ ICE BLENDED SERIES ═══ -->
       <div id="sec-ice-blended" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">Ice Blended Series</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mt-4">
@@ -247,47 +177,17 @@
         </div>
       </div>
 
-      <!-- JASMINE REFRESHER -->
+      <!-- ═══ JASMINE REFRESHER ═══ -->
       <div id="sec-jasmine" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">Jasmine Refresher</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mt-4">
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Tropical Fruitea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$6.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Pineapple, strawberry, mango, lychee, watermelon, and orange.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Lygon Fruitea</span><span class="text-gray-500 ml-3">$5.95</span></div>
-            <p class="text-xs text-gray-400 mt-1">Lychee and dragonfruit.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Passion Mango Fruitea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Fresh mango with passionfruit seeds.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Jade Lychee Jasmine <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Fresh green grape and lychee.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Wintermelon Refresher</span><span class="text-gray-500 ml-3">$5.45</span></div>
-            <p class="text-xs text-gray-400 mt-1">With chia seeds and aiyu jelly.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Golden Peach Fruitea</span><span class="text-gray-500 ml-3">$5.45</span></div>
-            <p class="text-xs text-gray-400 mt-1">Fresh orange and smashed peach.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Peach Berry Jasmine</span><span class="text-gray-500 ml-3">$5.95</span></div>
-            <p class="text-xs text-gray-400 mt-1">Fresh strawberry purée with juicy smashed peach.</p>
-          </div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Tropical Fruitea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$6.45</span></div><p class="text-xs text-gray-400 mt-1">Pineapple, strawberry, mango, lychee, watermelon, and orange.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Lygon Fruitea</span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Lychee and dragonfruit.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Passion Mango Fruitea <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.45</span></div><p class="text-xs text-gray-400 mt-1">Fresh mango with passionfruit seeds.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Jade Lychee Jasmine <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Fresh green grape and lychee.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Wintermelon Refresher</span><span class="text-gray-500 ml-3">$5.45</span></div><p class="text-xs text-gray-400 mt-1">With chia seeds and grass jelly.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Golden Peach Fruitea</span><span class="text-gray-500 ml-3">$5.45</span></div><p class="text-xs text-gray-400 mt-1">Fresh orange and smashed peach.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Peach Berry Jasmine</span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Fresh strawberry purée with juicy smashed peach.</p></div>
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Soursop Fruitea</span><span class="text-gray-500 ml-3">$5.95</span></div>
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Lychee Rose Fruitea</span><span class="text-gray-500 ml-3">$5.45</span></div>
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Kiwi Basil Fruitea</span><span class="text-gray-500 ml-3">$5.45</span></div>
@@ -295,228 +195,93 @@
         </div>
       </div>
 
-      <!-- YAKULT REFRESHERS -->
+      <!-- ═══ YAKULT REFRESHERS ═══ -->
       <div id="sec-yakult" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-0 border-b-2 border-primary-green/30 pb-2">Yakult Refreshers</h3>
         <p class="text-xs text-gray-500 italic mt-2 mb-3">Non-caffeinated on Yakult Sparkle</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1">
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Yakult Jasmine Green Tea</span><span class="text-gray-500 ml-3">$5.45</span></div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text flex items-center">Strawberry Yakult Sparkle <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-            <span class="text-gray-500 ml-3">$6.25</span>
-          </div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text flex items-center">Strawberry Yakult Sparkle <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$6.25</span></div>
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Mango Yakult Sparkle</span><span class="text-gray-500 ml-3">$6.25</span></div>
-          <div class="flex justify-between items-baseline py-2 border-b border-gray-100">
-            <span class="font-semibold text-dark-text flex items-center">Jade Lychee Yakult Sparkle <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-            <span class="text-gray-500 ml-3">$6.25</span>
-          </div>
+          <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text flex items-center">Jade Lychee Yakult Sparkle <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$6.25</span></div>
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Pineapple Yakult Sparkle</span><span class="text-gray-500 ml-3">$6.25</span></div>
           <div class="flex justify-between items-baseline py-2 border-b border-gray-100"><span class="font-semibold text-dark-text">Peach Yakult Sparkle</span><span class="text-gray-500 ml-3">$6.25</span></div>
         </div>
       </div>
 
-      <!-- SAIGON DRIP COFFEE -->
+      <!-- ═══ SAIGON DRIP COFFEE ═══ -->
       <div id="sec-saigon" class="menu-sec">
-        <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">Saigon Drip Coffee</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mt-4">
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Vietnamese Coffee <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Classic Saigon-style coffee with rich condensed milk.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Salted Cheese Coffee</span><span class="text-gray-500 ml-3">$6.45</span></div>
-            <p class="text-xs text-gray-400 mt-1">Vietnamese coffee with salted cheese cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Crème Brûlée Coffee <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$6.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Vietnamese coffee with a caramelized crème brûlée top.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Ube Coffee</span><span class="text-gray-500 ml-3">$6.45</span></div>
-            <p class="text-xs text-gray-400 mt-1">Vietnamese coffee with house ube cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Matcha Cream Coffee</span><span class="text-gray-500 ml-3">$6.75</span></div>
-            <p class="text-xs text-gray-400 mt-1">Vietnamese coffee topped with house matcha cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Viet Latte</span><span class="text-gray-500 ml-3">$5.95</span></div>
-            <p class="text-xs text-gray-400 mt-1">Slow-dripped coffee with condensed milk and fresh whole milk.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Coco Bac Xiu <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Vietnamese coffee with coconut milk and roasted coconut flakes.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Ube Bac Xiu <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$5.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Vietnamese coffee with creamy ube milk.</p>
-          </div>
+        <h3 class="font-heading text-2xl font-bold text-primary-green mb-0 border-b-2 border-primary-green/30 pb-2">Saigon Drip Coffee</h3>
+        <p class="text-xs text-gray-500 italic mt-2 mb-3">Contains dairy</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1">
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Vietnamese Coffee <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.45</span></div><p class="text-xs text-gray-400 mt-1">Classic Saigon-style coffee with rich condensed milk.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Salted Cheese Coffee</span><span class="text-gray-500 ml-3">$6.45</span></div><p class="text-xs text-gray-400 mt-1">Vietnamese coffee with salted cheese cream.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Crème Brûlée Coffee <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$6.45</span></div><p class="text-xs text-gray-400 mt-1">Vietnamese coffee with a caramelized crème brûlée top.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Ube Coffee</span><span class="text-gray-500 ml-3">$6.45</span></div><p class="text-xs text-gray-400 mt-1">Vietnamese coffee with house ube cream.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Thai-Gon Latte <span class="new-badge">New</span></span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">The best of both worlds — Vietnamese coffee layered with Thai green milk tea.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Viet Latte</span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Extra-milky Vietnamese coffee.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Coco Bac Xiu <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Vietnamese coffee layered with coconut milk and roasted coconut flakes.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Ube Bac Xiu <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$5.95</span></div><p class="text-xs text-gray-400 mt-1">Vietnamese coffee layered with creamy ube milk.</p></div>
         </div>
       </div>
 
-      <!-- SPECIALTIES -->
+      <!-- ═══ SPECIALTIES ═══ -->
       <div id="sec-specialties" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">Specialties</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div class="bg-[#F9F6F1] p-4 rounded-xl border border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Taro Crunch <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3 font-semibold">$6.95</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Smooth house taro blend topped with taro paste and Oreo crumbs.</p>
-          </div>
-          <div class="bg-[#F9F6F1] p-4 rounded-xl border border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text">Mangonada</span>
-              <span class="text-gray-500 ml-3 font-semibold">$7.25</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Sweet &amp; tangy mango with chamoy, Tajín, fresh mango chunks, and a tamarind stick.</p>
-          </div>
-          <div class="bg-[#F9F6F1] p-4 rounded-xl border border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text">House Herbal Refresher</span>
-              <span class="text-gray-500 ml-3 font-semibold">$5.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">A traditional Vietnamese herbal drink with grass jelly and chia seeds.</p>
+          <div class="bg-[#F9F6F1] p-4 rounded-xl border border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Taro Crunch <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3 font-semibold">$6.95</span></div><p class="text-xs text-gray-400 mt-1">Smooth house taro blend topped with taro paste and Oreo crumbs.</p></div>
+          <div class="bg-[#F9F6F1] p-4 rounded-xl border border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Mangonada</span><span class="text-gray-500 ml-3 font-semibold">$7.25</span></div><p class="text-xs text-gray-400 mt-1">Sweet &amp; tangy mango with chamoy, Tajín, fresh mango chunks, and a tamarind stick.</p></div>
+          <div class="bg-[#F9F6F1] p-4 rounded-xl border border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">House Herbal Refresher</span><span class="text-gray-500 ml-3 font-semibold">$5.45</span></div><p class="text-xs text-gray-400 mt-1">A traditional Vietnamese herbal drink with grass jelly and chia seeds.</p></div>
+        </div>
+        <!-- Banana Pudding -->
+        <div class="pudding-banner rounded-xl p-5 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div><h4 class="font-heading text-xl font-bold text-dark-text">🍌 Banana Pudding</h4><p class="text-sm text-gray-600 mt-1">Layers of fresh banana, vanilla cream &amp; Nilla wafers. Perfect add-on with any drink!</p></div>
+          <div class="flex gap-3 flex-shrink-0">
+            <div class="bg-[#3D3D3D] rounded-full px-5 py-2 text-center"><span class="text-[#F5A800] font-bold text-xl block leading-tight">$2</span><span class="text-[#E08900] text-[10px] font-bold uppercase tracking-wide">1 cup</span></div>
+            <div class="bg-[#3D3D3D] rounded-full px-5 py-2 text-center"><span class="text-[#F5A800] font-bold text-xl block leading-tight">$5</span><span class="text-[#E08900] text-[10px] font-bold uppercase tracking-wide">3 cups</span></div>
           </div>
         </div>
       </div>
 
-      <!-- UJI MATCHA SERIES -->
+      <!-- ═══ UJI MATCHA SERIES ═══ -->
       <div id="sec-matcha" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">Uji Matcha Series</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mt-4">
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Cold Whisked Matcha Latte</span><span class="text-gray-500 ml-3">$6.95</span></div>
-            <p class="text-xs text-gray-400 mt-1">Cold-whisked matcha blended with creamy oat milk.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Oreo Cheese Matcha</span><span class="text-gray-500 ml-3">$7.25</span></div>
-            <p class="text-xs text-gray-400 mt-1">Matcha latte topped with Oreo crumble and cheese foam.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Crème Brûlée Matcha <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$7.25</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Matcha latte finished with a caramelized crème brûlée top.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Matcha Cloud Latte</span><span class="text-gray-500 ml-3">$7.25</span></div>
-            <p class="text-xs text-gray-400 mt-1">Bold matcha with sweet cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Brown Sugar Boba Matcha Latte</span><span class="text-gray-500 ml-3">$7.25</span></div>
-            <p class="text-xs text-gray-400 mt-1">Matcha with brown sugar syrup, creamy oat milk, and boba.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Strawberry Dream Matcha <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$7.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Strawberry jam layered with oat milk, matcha, and house strawberry cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Ube Matcha</span><span class="text-gray-500 ml-3">$7.25</span></div>
-            <p class="text-xs text-gray-400 mt-1">Rich matcha paired with house ube cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Double Matcha</span><span class="text-gray-500 ml-3">$7.45</span></div>
-            <p class="text-xs text-gray-400 mt-1">Rich matcha paired with house matcha cream.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Banana Biscoff Matcha <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$7.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Matcha latte topped with banana cream and Biscoff crunch.</p>
-          </div>
-          <div class="py-2 border-b border-gray-100">
-            <div class="flex justify-between items-baseline">
-              <span class="font-semibold text-dark-text flex items-center">Coco Matcha Cloud <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span>
-              <span class="text-gray-500 ml-3">$7.45</span>
-            </div>
-            <p class="text-xs text-gray-400 mt-1">Refreshing coconut water topped with smooth, creamy matcha foam.</p>
-          </div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Cold Whisked Matcha Latte</span><span class="text-gray-500 ml-3">$6.95</span></div><p class="text-xs text-gray-400 mt-1">Cold-whisked matcha blended with creamy oat milk.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Oreo Cheese Matcha</span><span class="text-gray-500 ml-3">$7.25</span></div><p class="text-xs text-gray-400 mt-1">Matcha latte topped with Oreo crumble and cheese foam.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Crème Brûlée Matcha <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$7.25</span></div><p class="text-xs text-gray-400 mt-1">Matcha latte finished with a caramelized crème brûlée top.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Matcha Cloud Latte</span><span class="text-gray-500 ml-3">$7.25</span></div><p class="text-xs text-gray-400 mt-1">Bold matcha with sweet cream.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Brown Sugar Boba Matcha Latte</span><span class="text-gray-500 ml-3">$7.25</span></div><p class="text-xs text-gray-400 mt-1">Matcha with brown sugar syrup, creamy oat milk, and boba.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Strawberry Dream Matcha <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$7.45</span></div><p class="text-xs text-gray-400 mt-1">Strawberry jam layered with oat milk, matcha, and house strawberry cream.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Ube Matcha</span><span class="text-gray-500 ml-3">$7.25</span></div><p class="text-xs text-gray-400 mt-1">Rich matcha paired with house ube cream.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text">Double Matcha</span><span class="text-gray-500 ml-3">$7.45</span></div><p class="text-xs text-gray-400 mt-1">Rich matcha paired with house matcha cream.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Banana Biscoff Matcha <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$7.45</span></div><p class="text-xs text-gray-400 mt-1">Matcha latte topped with banana cream and Biscoff crunch.</p></div>
+          <div class="py-2 border-b border-gray-100"><div class="flex justify-between items-baseline"><span class="font-semibold text-dark-text flex items-center">Coco Matcha Cloud <span class="star-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg></span></span><span class="text-gray-500 ml-3">$7.45</span></div><p class="text-xs text-gray-400 mt-1">Refreshing coconut water topped with smooth, creamy matcha foam.</p></div>
         </div>
       </div>
 
-      <!-- CROFFLES -->
+      <!-- ═══ CROFFLES ═══ -->
       <div id="sec-croffles" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-0 border-b-2 border-primary-green/30 pb-2">Croffles</h3>
         <p class="text-xs text-gray-500 italic mt-2 mb-4">Croissant × Waffle Pastry</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Strawberry Matcha.jpg" alt="Strawberry Matcha Cream" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Strawberry Matcha</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Matcha cream topped with fresh strawberries.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Almond Matcha.jpg" alt="Almond Matcha Cream" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Almond Matcha</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Matcha cream topped with sliced almonds.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Matcha Oreo.jpg" alt="Matcha Oreo Crunch" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Matcha Oreo Crunch</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Matcha cream topped with Oreo crumbs.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Cookie Cream.jpg" alt="Cookie &amp; Cream" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Cookie &amp; Cream</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Cream topped with Oreo cookie and chocolate drizzle.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Biscoff Cookie.jpg" alt="Biscoff Cookie Cream" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Biscoff Cookie Cream</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Cream topped with crushed Biscoff crumbs and Lotus cookie.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Classic Smore.jpg" alt="Classic S'more" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Classic S'more</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Toasted marshmallows and chocolate drizzle.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100">
-            <img src="/images/croffle/Strawberry Cream.jpg" alt="Strawberry Cream" class="w-full h-48 object-cover">
-            <div class="p-4">
-              <div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Strawberry Cream</span><span class="text-gray-600 text-sm">$6.95</span></div>
-              <p class="text-xs text-gray-500">Fresh strawberries with sweet cream and chocolate drizzle.</p>
-            </div>
-          </div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Strawberry Matcha.jpg" alt="Strawberry Matcha" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Strawberry Matcha</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Matcha cream topped with fresh strawberries.</p></div></div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Almond Matcha.jpg" alt="Almond Matcha" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Almond Matcha</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Matcha cream topped with sliced almonds.</p></div></div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Matcha Oreo.jpg" alt="Matcha Oreo Crunch" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Matcha Oreo Crunch</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Matcha cream topped with Oreo crumbs.</p></div></div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Cookie Cream.jpg" alt="Cookie &amp; Cream" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Cookie &amp; Cream</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Cream topped with Oreo cookie and chocolate drizzle.</p></div></div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Biscoff Cookie.jpg" alt="Biscoff Cookie Cream" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Biscoff Cookie Cream</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Cream topped with crushed Biscoff crumbs and Lotus cookie.</p></div></div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Classic Smore.jpg" alt="Classic S'more" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Classic S'more</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Toasted marshmallows and chocolate drizzle.</p></div></div>
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition border border-gray-100"><img src="/images/croffle/Strawberry Cream.jpg" alt="Strawberry Cream" class="w-full h-48 object-cover"><div class="p-4"><div class="flex justify-between items-baseline mb-1"><span class="font-bold text-dark-text text-sm">Strawberry Cream</span><span class="text-gray-600 text-sm">$6.99</span></div><p class="text-xs text-gray-500">Fresh strawberries with sweet cream and chocolate drizzle.</p></div></div>
         </div>
       </div>
 
-      <!-- TOPPINGS -->
+      <!-- ═══ TOPPINGS ═══ -->
       <div id="sec-toppings" class="menu-sec">
         <h3 class="font-heading text-2xl font-bold text-primary-green mb-1 border-b-2 border-primary-green/30 pb-2">Toppings <span class="text-base font-normal text-gray-500">(+ $0.95)</span></h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-4 text-center">
           <div><p class="font-bold text-dark-text mb-1">Classic</p><p class="text-gray-500 text-sm">Black Tapioca</p></div>
           <div><p class="font-bold text-dark-text mb-1">Jellies</p><p class="text-gray-500 text-sm">Rainbow, Lychee, Mango, Coconut, Coffee</p></div>
-          <div><p class="font-bold text-dark-text mb-1">Crystal</p><p class="text-gray-500 text-sm">Original, Taro, Matcha</p></div>
+          <div><p class="font-bold text-dark-text mb-1">Crystal</p><p class="text-gray-500 text-sm">Original, Taro, Matcha, Cherry Blossom</p></div>
           <div><p class="font-bold text-dark-text mb-1">Poppings</p><p class="text-gray-500 text-sm">Mango, Strawberry, Lychee</p></div>
         </div>
       </div>
@@ -533,31 +298,12 @@
 </footer>
 
 <script>
-  document.getElementById('mobile-menu-button').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const catBtns = document.querySelectorAll('.cat-btn');
-  const menuSecs = document.querySelectorAll('.menu-sec');
-  catBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const el = document.getElementById(btn.dataset.target);
-      if (el) {
-        const offset = 140;
-        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
-      }
-    });
-  });
-  const secObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        catBtns.forEach(b => b.classList.remove('active'));
-        const btn = document.querySelector(`.cat-btn[data-target="${entry.target.id}"]`);
-        if (btn) { btn.classList.add('active'); btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' }); }
-      }
-    });
-  }, { rootMargin: '-30% 0px -60% 0px' });
-  menuSecs.forEach(s => secObs.observe(s));
+  document.getElementById('mobile-menu-button').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden')});
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const catBtns=document.querySelectorAll('.cat-btn'),menuSecs=document.querySelectorAll('.menu-sec');
+  catBtns.forEach(btn=>{btn.addEventListener('click',()=>{const el=document.getElementById(btn.dataset.target);if(el){window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-140,behavior:'smooth'})}})});
+  const obs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){catBtns.forEach(b=>b.classList.remove('active'));const btn=document.querySelector(`.cat-btn[data-target="${entry.target.id}"]`);if(btn){btn.classList.add('active');btn.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})}}})},{rootMargin:'-30% 0px -60% 0px'});
+  menuSecs.forEach(s=>obs.observe(s));
 </script>
 </body>
 </html>
